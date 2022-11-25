@@ -1,0 +1,94 @@
+EQUATIONS
+
+table of contents
+-
+GROUP 1 - regular polygons 3 to 6 sides and circle
+GROUP 2 - regular polygons sideless shapes
+GROUP 3 - quartered or side divisions and or vertex divisions
+-
+
+GROUP 1
+equilateral triangle
+side = perimeter/3 
+area = side² * √3 / 4
+
+square
+side = perimeter/4 
+area = side²
+
+pentagon 
+side = perimeter/5 
+area = side² / 4 * √(25 + 10 * √5)
+
+hexagon
+side = perimeter/6
+area = 3/2 * √3 * side²
+
+circle
+radius = circumference / (pi x 2) 
+area = π r²
+
+
+GROUP 2 sideless shapes 
+equilateral triangle 2 sides
+side = (perimeter(3/2))/3 . 
+area = side² * √3 / 4
+
+square 3 sides
+side = (perimeter(4/3))/4 
+area = side²
+
+square 2 sides 90 degrees isosceles right triangle
+side = perimeter/(2+√2)
+area = side² / 2
+
+pentagon 4 sides
+side = (perimeter(5/4))/5 
+area = side² / 4 * √(25 + 10 * √5)
+
+petnagon 3 sides quadrilateral
+pentagon 2 sides calculcate angle 72o to get triangular area
+
+hexagon 5 sides
+side = (perimeter(6/5))/6
+area = 3/2 * √3 * side²
+
+hexagon 4 sides penta
+hexagon 3 sides quad is trapezoid
+hexagon 2 sides tri
+
+circular segments
+
+
+GROUP 3 half and quartered or side divisions and or vertex divisions
+equilateral triangle
+cutting in half by would yield in another equilateral triangle. The bottom half is regular trapezoid also applicable to hexagon vertex division.
+cutting in half by vertex is a right triangle.
+
+rectangle 
+perimeter/6 = side. 
+area = side * (side*2)
+
+1/4 and 3/4 square
+
+pentagon = this answer is beyond the scope of the article but you can find more information here.
+The bottom half?
+vertex and side division.
+vertex is find
+
+hexagon
+two versions trapezoid.
+from vertex and from center of side
+perimeter/5 = side
+unequalside = side * 2
+height = 1/2*Math.sqrt(4*b*b-(a-b)*(a-b));
+area = ( unequalside + side ) / 2 * height
+
+semi-circle 
+perimeter/(Math.PI-(-2) = radius. 
+area = π r
+
+radius = perimeter/Math.PI
+area = radius*radius*Math.PI/2
+
+

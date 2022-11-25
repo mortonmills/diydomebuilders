@@ -1,0 +1,232 @@
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+
+.tabcontent {
+    animation: fadeEffect .5s; /* Fading effect takes 1 second */
+}
+
+
+#Geodesic Dome 
+#Offgrid 
+#Calculators 
+#diydomebuilders+ 
+#Library
+
+/* Following Section is for putting images in a row on indexpage */
+* {
+    box-sizing: border-box;
+}
+div.gallery {
+    border-radius:  50px;
+    border: 10px solid #ffffff;
+    background-color: black;
+    
+    
+}
+
+div.gallery:hover {
+    border: 10px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 35px 35px 0px 0px;
+}
+
+div.desc {
+    text-align: center;
+    color: orangered;
+}
+
+
+
+.responsive {
+    padding: 6px 6px;
+    float: left;
+    width: 19.999999%;
+}
+
+@media only screen and (max-width: 1023px) {
+    .responsive {
+        width: 33.32%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Keeps a scroll bar in side, prevents inconsistencies among webpages that don't need scroll bar */
+html { overflow-y: scroll;
+}
+
+/* background, font*/
+.bodypage {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.bodycalc {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+/* keeps title black but still usable as link to index */
+header a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* various sizes for horizontal rows */
+
+
+.horrow {
+    width: 96%;
+}
+
+.horrow2 {
+    width: 42%;
+    }
+
+.horrow3 {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #000000;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+/* disables effects of text align center from body css */
+.noalign {
+    text-align:left;
+}
+
+/* adds margins to content following the header */
+.newmargin {
+    margin: 0px 60px 0px 60px;
+}
+
+/* fits images on the page without creating a scrollbar */
+.imagefit img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* centers image and is responsive to screen sizes */
+.gocent {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gocent2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.goleft {
+    float: left;
+}
+
+.goright {
+    float: right;
+}
+
+.textright {
+    text-align: right;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+/* adds a border to boxes */
+.boxborder {
+    
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.boxborder2 {
+    padding: 15px;
+    border: 3px dotted black;
+    border-radius: 4px;
+}
+
+/* Following Section is for putting images in a row on indexpage */
+
+.imagechange {
+    border-radius: 35px 35px 0px 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
+}
+
+@media only screen and (max-width: 570px) {
+    .newmargin {
+        
+        margin: 0px;
+    }
+}
+

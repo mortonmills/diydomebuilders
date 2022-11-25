@@ -1,0 +1,130 @@
+<!doctype html>
+
+<head id="head">
+<script src="../head.js"></script>
+</head>
+
+<header id="header">
+<script src="../header.js"></script>
+</header>
+
+<nav id="navbar">
+<script src="../navbar.js"></script>
+</nav>
+
+<script src="../cms.js"></script>
+
+    <main>
+      <h1>diydomebuilders+</h1>
+      <div class="datemade">created January 20, 2020 
+        <b>(updated January 20, 2020)</b>
+      </div>
+
+
+  <link rel="stylesheet" href="../table.css">
+      <div class="reel">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxpY7u45PrhnE_Ik-aqiKPq-TMK1-hcUSPIi6prF1qm__CAQ/viewform?usp=sf_link"><img class="reg" title="Google Forms" src="../images/formsicon.png">
+          <br>
+          diydomebuilders+ Form
+        </a>
+        <br>
+        Add your (or another's) project to diydomebuilders+
+      </div>
+
+<div id="diyTable"></div>
+
+<script>
+
+let diyTable = document.getElementById("diyTable")
+
+//make sure this ` is on same row as content
+let diyTableContent = `
+Timestamp	Creator	Diameter	Structural	Profile	Polyhedra	Class	Frequency	Frame Material	Country			Web Address (optional)
+2/29/2020 19:29:41	Camp Recharge	32 ft	Rigid	1/2 (Dome)	Icosahedron (Most Common)	Class I (Most Common)	4V	Metal	United-States			http://dome.zillabit.com/rechargedome.html
+2/29/2020 20:06:45	Steve Miler	42 ft	Surfaced	1/2 (Dome)	Icosahedron (Most Common)	Class I (Most Common)	6V	Wood	United-States			http://web.archive.org/web/20050311230541/http://www.sover.net/~triorbtl/ply_42_1.html
+2/29/2020 20:08:58	Dragisa Krsmanovic	12 ft	Rigid	3/4	Icosahedron (Most Common)	Class I (Most Common)	3V	Metal	United-States			http://www.dragishak.com/dome/dome.html
+2/29/2020 20:12:14	Tamara Munzner	20 ft	Rigid	1/2 (Dome)	Icosahedron (Most Common)	Class I (Most Common)	2V	Metal	United-States			http://graphics.stanford.edu/~munzner/dome/
+2/29/2020 20:15:20	Howard Cohen	20 ft	Rigid	1/4	Icosahedron (Most Common)	Class I (Most Common)	3V	Metal	United-States			http://www.timefold.com/guests/hoco/public/html/page19.html
+2/29/2020 20:17:17	Jeff	24 ft	Rigid	3/4	Icosahedron (Most Common)	Class I (Most Common)	3V	Metal	United-States			http://www.weasel.com/dome.html
+2/29/2020 20:21:00	Kalani Patterson	24 ft	Rigid	3/4	Icosahedron (Most Common)	Class I (Most Common)	3V	Metal	United-States			http://burningman.rengeekcentral.com/Dome.html
+2/29/2020 20:27:52	Mark	22 ft	Rigid	1/2 (Dome)	Icosahedron (Most Common)	Class I (Most Common)	2V	Metal	United-Kingdom			http://www.chaos.org.uk/~markt/7m-dome.html
+2/29/2020 20:37:48	Andrew Durham	18 ft	Surfaced	1/1 (Sphere)	Icosahedron (Most Common)	Class II	2V	Wood	United-States			https://darkroomretreat.com/blog/2009/07/spheres-for-darkness-retreats/
+2/29/2020 20:59:32	Steve Tiffany		Rigid	1/2 (Dome)	Icosahedron (Most Common)	Class I (Most Common)	4V	Wood	United-States			https://www.stevetiffany.com/dome2.html
+2/29/2020 21:02:17	Ashok Mathur	24 ft	Rigid	3/4	Icosahedron (Most Common)	Class I (Most Common)	3V	Metal	India			https://www.acmathur.me/domes/angled-iron-icosahedron-based-dome
+3/1/2020 21:25:52	Cuevas De Sol	20 ft	Rigid	1/4	Icosahedron (Most Common)	Class I (Most Common)	3V	Wood	Spain			http://www.earthship.es/geodesicdome
+3/1/2020 21:34:33	Ecoproyecta	39 ft	Rigid	3/4	Icosahedron (Most Common)	Class I (Most Common)	6V	Wood	Spain			http://ecoproyecta.es/vivienda-geodesica-yecla/
+3/1/2020 21:53:27	Volunteers	98 ft	Surfaced	1/4	Icosahedron (Most Common)			Pykrete (Ice)	Finland			http://www.structural-ice.com/dome.html
+	Patrick	17ft	Rigid	1/2 (Dome)	Icosahedron (Most Common)	Class I (Most Common)	2V	Metal	United-States			http://www.byexample.net/articles/topics/geodesic_domes.html
+`
+
+
+diyTable.innerHTML = diyTableMaker(diyTableContent)
+
+</script>
+
+
+<script src="../tablefilter/tablefilter.js"></script>
+
+<script data-config>
+    var tfConfig = {
+        base_path: '../tablefilter/',
+
+                    auto_filter: {
+            delay: 0 //milliseconds
+        },
+        // filter types
+   
+        col_2: "checklist",
+   col_3: "checklist",
+        col_4: "checklist",
+   col_5: "checklist",
+           col_6: "checklist",
+   col_7: "checklist",
+           col_8: "checklist",
+
+
+        // column types
+        col_types: [
+            'string', 'string', 'number',
+            'string', 'string', 'string'
+            
+        ],
+
+        // filters and headers position
+        filters_row_index: 1,
+        headers_row_index: 0,
+                        sticky_headers: true,
+        state: { types: ['local_storage']},
+        popup_filters: false,
+
+        alternate_rows: true,
+        rows_counter: true,
+        btn_reset: true,
+        status_bar: true,
+        ignore_diacritics: true,
+        no_results_message: true,
+        enable_empty_option: false,
+        enable_non_empty_option: false,
+        loader: false,
+        mark_active_columns: false,
+        highlight_keywords: false,
+        
+         // theme
+        themes: [{ name: '' }],
+        
+
+        // sorting extension
+        extensions: [{ name: 'sort' }]
+    };
+    var tf = new TableFilter('grouped-headers', tfConfig, 2);
+    tf.init();
+</script>
+
+
+<hr>
+
+    </main>
+
+<footer id="footer">
+<script src="../footer.js"></script>
+</footer>

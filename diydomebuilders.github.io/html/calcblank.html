@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<!-- <p>scaling definition allows page to fit to mobile devices and smaller browser windows</p> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <p>site info search engine</p> -->
+
+    <meta charset="utf-8">
+    <meta name="author" content="diydomebuilders">
+    <meta name="description" content="A site made for domebuilding projects. Includes tutorials & calculators for building a dome, a covering, and taking that dome offgrid.">
+
+    <title>diydomebuilders</title>
+    
+<link rel="shortcut icon" href="strutplace.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="template.css"> 
+
+</head>
+    
+    
+<body class="bodycalc">
+    
+    
+    
+    <header>
+    <a href="geoindex2.html">
+     <h1>diydomebuilders <img src="diyicon3.png" width="35px" height="auto" alt="stickman with dome on his back"></h1>
+    </a>
+    </header>
+    <hr> 
+
+    
+    <div class="newmargin">
+    <div class="imagefit">
+        
+            <h2>2V Dome</h2>
+            Class 1 Breakdown 1 Profile <sup>3</sup>&frasl;<sub>6</sub>
+        
+            <div class="noalign">
+    
+            <hr class="horrow2">
+            
+            <div class="boxchange boxborder"> 
+      <img src="sphericaldiameter.png" alt="Mountains">
+                
+               
+            <div class="textcenter">   
+            
+            <h3>Spherical Diameter</h3>
+                   
+            <input
+            style="font-size:40px;text-align: center; 
+            background-color:#ffffff;color: black;border: 3px solid black;border-radius: 4px;" 
+            size="4px" id="main" type="text" placeholder="Diameter" 
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diameter'" 
+            oninput="mainConvert(this.value)" onchange="mainConvert(this.value)">
+
+
+            <p></p>
+            <p>
+  <input type="radio" name="fraction" class="tablinks2"  
+         onclick="openCity2(event, 'convert0')" 
+         id="convertNone">custom 
+                
+                
+                
+  <input type="radio" name="fraction" class="tablinks2"  
+         onclick="openCity2(event, 'convert1')" id="convertOne">imperial (ft)
+                
+                
+                
+  <input type="radio" name="fraction" class="tablinks2"  
+         onclick="openCity2(event, 'convert2')" 
+         id="convertTwo">metric (m)
+                
+                
+</p>
+                </div>
+                   </div>
+                
+                
+                
+                <h3>DOME DIMENSIONS</h3>
+                
+                <table class="textcenter" width="100%">
+  <tr>
+      <th></th>
+  </tr>
+  <tr>
+      <th class="textleft">Base Diameter</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="baseDiameter" type="text" placeholder="g"></td>
+  </tr>
+  <tr>
+      <th class="textleft">Height</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="height" type="text" placeholder="g"></td>
+      
+  </tr>
+  <tr>
+      <th class="textleft">Perimeter</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="perimeter" type="text" placeholder="g"></td>
+  </tr>
+ <tr>
+      <th class="textleft">Base Area </th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="baseArea" type="text" placeholder="g"></td>
+  </tr>                   
+</table>  
+  
+           <hr class="horrow3">
+                
+                
+                
+<div id="convert0" class="tabcontent2"> 
+  <div class="boxchange2">
+            
+                <h3>CUTTING</h3>
+            
+                
+<p>A x30 <input class="redstrut"
+          size="9" id="strutA0" type="text" placeholder="Strut A"
+  oninput="strutA1Convert(this.value)" onchange="strutA1Convert(this.value)"></p>
+    
+<p>B x35 <input class="yellowstrut" 
+          size="10" id="strutB0" type="text" placeholder="Strut B"
+  oninput="strutB1Convert(this.value)" onchange="strutB1Convert(this.value)"></p>
+                
+                <hr class="horrow3"> 
+                x65 Total
+              
+                </div>
+        
+        
+                 <div class="boxchange2 boxborder2">
+            
+            <h3>Conduit Hub</h3>
+      <img src="addedlength.png" alt="Mountains">
+         <div class="textcenter">     
+            <b>Added Length</b>
+                     
+             
+        <input style="font-size:25px;background-color:#37ff75;color: black;border: 4px solid black;border-radius: 4px;" size="1" id="hub" type="text" placeholder="Added"
+    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Added'"             
+    oninput="mainConvert(document.getElementById('main').value);pipeDiameterConvert(document.getElementById('pipediameter').value)" onchange="mainConvert(document.getElementById('main').value);pipeDiameterConvert(document.getElementById('pipediameter').value)"> 
+                     
+            </div> 
+            
+            </div>
+                
+               
+                
+                <div class="clearfix"></div>
+             <p> Struts per Pole:</p>
+                
+<p>
+        <input type="radio" name="pole" class="tablinks" value="1" onclick="openCity(event, 'number1');" id="ratioOne">1
+        <input type="radio" name="pole" class="tablinks" value="2" onclick="openCity(event, 'number2');" id="ratioTwo">2
+        <input type="radio" name="pole" class="tablinks" value="3" onclick="openCity(event, 'number3');" id="ratioThree">3
+        <input type="radio" name="pole" class="tablinks" value="4" onclick="openCity(event, 'number4');" id="ratioFour">4
+</p> 
+                
+<div id="number1" class="tabcontent">
+<p>
+    A x30 
+        <input class="redstrut" size="9" id="strutA1" type="text" placeholder="Strut A">
+</p>
+    
+<p>
+    B x35 
+        <input class="yellowstrut" size="10" id="strutB1" type="text" placeholder="Strut B">
+</p>
+                </div>
+
+<div id="number2" class="tabcontent">
+<p>
+    A+B x30
+    
+        <input class="redstrut" size="4" id="strutA2" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutB2" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutSum2" type="text" placeholder="Strut B"></p>
+    
+    
+    
+    <p> B x5<input class="redstrutspare" size="4" type="text" placeholder="Spare A">
+    
+        <input class="yellowstrut" size="4" id="strutB21" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutSum21" type="text" placeholder="Strut B"></p>
+</div>
+
+<div id="number3" class="tabcontent">
+   <p>
+    A+B+B x10
+    
+        <input class="redstrut" size="4" id="strutA3" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutB3" type="text" placeholder="Strut B">
+       
+       <input class="yellowstrut" size="4" id="strutB31" type="text" placeholder="Strut B">
+    =
+       <input style="font-size:50px;" size="4" id="strutSum3" type="text" placeholder="Strut B"
+ ></p>
+    
+    <p>
+    A+A+B x10
+    
+        <input class="redstrut" size="4" id="strutA31" type="text" placeholder="Strut A">
+        
+        <input class="redstrut" size="4" id="strutA32" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutB32" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutSum31" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B x2
+    
+        <input class="redstrutspare" size="4" type="text" placeholder="Spare A">
+
+        <input class="yellowstrut" size="4" id="strutB33" type="text" placeholder="Strut B">
+       
+        <input class="yellowstrut" size="4" id="strutB34" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutSum32" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B x1
+    
+        <input class="redstrutspare" size="4" type="text" placeholder="Spare A" readonly>
+
+        <input class="yellowstrutspare" size="4" type="text" placeholder="Spare B" readonly>
+       
+        <input class="yellowstrut" size="4" id="strutB35" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutSum33" type="text" placeholder="Strut B"></p>
+    
+    
+</div>
+
+<div id="number4" class="tabcontent">
+<p>
+    A+A+B+B x15
+    
+        <input class="redstrut" size="2" id="strutA4" type="text" placeholder="Strut A">
+        
+        <input class="redstrut" size="2" id="strutA41" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="2" id="strutB4" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutB41" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutSum4" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B+B x1
+    
+        <input style="font-size:50px;background-color:#e8e8e8;color: black;border: 4px solid white;border-radius: 4px;" size="2" type="text" placeholder="" readonly>
+        
+        <input class="yellowstrut" size="2" id="strutB46" type="text" placeholder="Strut B">
+
+        <input class="yellowstrut" size="2" id="strutB42" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutB43" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutSum41" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B x1
+    
+        <input class="redstrutspare" size="2" type="text" placeholder="Spare A" readonly>
+        
+        <input class="redstrutspare" size="2" type="text" placeholder="Spare A" readonly> 
+
+        <input class="yellowstrut" size="2" id="strutB44" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutB45" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutSum42" type="text" placeholder="Strut B"></p>
+    
+    
+    
+</div>
+                
+                
+                
+                
+                
+                
+               
+                
+           <hr class="horrow3">
+        
+        <h3>FLATTENING</h3>
+            
+        <img src="strutdiameter.png" alt="Mountains">
+      <div class="textcenter">       
+    <p> Note: use O.D. (outer diameter)
+    <input 
+style="font-size:40px;text-align: center;background-color:#ffffff;color: black;border: 3px solid black;border-radius: 4px;" size="2" id="pipediameter" type="text" placeholder="pipe diameter"
+   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diameter'"          
+  oninput="pipeDiameterConvert(this.value);mainConvert(document.getElementById('main').value)" onchange="pipeDiameterConvert(this.value);mainConvert(document.getElementById('main').value)"> 
+    </p> 
+    </div> 
+                
+                <table class="textcenter" width="100%">
+  <tr>
+      <th>ff</th>
+  </tr>
+  <tr>
+      <th class="textleft">Flattened Length</th>
+      
+    <td><input size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="flattenedlength" type="text" placeholder="subOne"></td>
+  </tr>
+  <tr>
+      <th class="textleft">Added Length Conduit Hub</th>
+      
+    <td><input  size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="addedflattenedhub" type="text" placeholder="subOne"></td>
+      
+  </tr>
+  <tr>
+      <th class="textleft">Total Flattened Length (recommended)</th>
+      
+    <td><input  size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="flattenedlengthtotal" type="text" placeholder="subOne"></td>
+  </tr>
+</table>  
+            
+        <p></p>
+           <br>
+
+                
+           <hr class="horrow3">
+           
+        <h3>MAKING HOLES</h3>
+    <img src="strutplace.png" width="100%" height="auto">
+           
+           <hr class="horrow3">
+           
+        <h3>BENDING</h3>
+    <img src="2vbending.png" width="100%" height="auto">
+           
+           <hr class="horrow3">
+           
+        <h3>ASSEMBLY</h3>
+    <img src="2vassembly.png" width="100%" height="auto">
+           
+           
+           
+           <hr class="horrow3">
+           
+        <h3>BILL OF MATERIALS</h3>
+           <div class="boxchange2 boxborder">
+               
+               <h3>STRUTS</h3>
+    <img src="strutplace.png" width="100%" height="auto">
+        </div>
+           
+           <div class="boxchange2 boxborder">
+           <h3>BOLTS</h3>
+           
+           You need x26 Bolts.
+           You need x26 Nuts.
+           You need x42 Washers.
+           OR
+           You need x26 Flange Bolts.
+           You need x26 Flange Nuts.
+            
+        <img src="boltlength.png" alt="Mountains">
+    <div class="textcenter">       
+    <p>
+    <input 
+style="font-size:40px;text-align: center;background-color:#ffffff;color: black;border: 3px solid black;border-radius: 4px;" size="2" id="pipegauge" type="text" placeholder="pipe diameter"
+   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diameter'"          
+  oninput="pipeGaugeConvert(this.value);mainConvert(document.getElementById('main').value)" 
+           onchange="pipeGaugeConvert(this.value);mainConvert(document.getElementById('main').value)">
+    </p> 
+    </div>  
+               
+<table class="textcenter" width="100%">
+  <tr>
+      <th></th>
+  </tr>
+                
+    <tr>
+      <th class="textleft">Bolt Length (recommended)</th>
+      
+    <td><input size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="boltlength" type="text" placeholder="subOne"></td>
+  </tr>
+      
+    
+               </table>
+               
+               
+            
+            
+           
+           </div>
+           
+           <div class="clearfix"></div>
+                      
+                </div>               
+                
+<div id="convert1" class="tabcontent2">
+    
+        <div class="boxchange2">
+            
+                <h3>CUTTING</h3>
+        
+                <div class="boxchange2">
+<table>
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        A&nbsp;x30 
+                    </td>
+                    <td rowspan="2">
+            <input class="redstrut" size="1" id="strutAfoot" type="text" placeholder="Strut A">
+                  </td>
+                    <td rowspan="2" style="font-size: 20px">Feet</td>
+                  <td rowspan="2">
+            <input class="redstrut" size="1" id="strutAinch" type="text" placeholder="Strut A"> 
+                  </td>
+                  <td>
+            <input style="font-size:25px;background-color:#ff3737;color: black;border: 4px solid black;border-radius: 4px;"size="1" id="strutAinchnumer" type="text" placeholder="Strut A">
+                    <hr>
+                    </td>
+                    <td rowspan="2" style="font-size: 20px">Inches</td>
+                  </tr>
+                  <tr>            
+                    <td><input style="font-size:25px;background-color:#ff3737;color: black;border: 4px solid black;border-radius: 4px;" size="1" id="strutAinchdenom" type="text" placeholder="Strut A"></td>
+                  </tr>
+            </tbody>
+    </table> 
+                <p></p>
+                    
+    <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        B&nbsp;x35 
+                    </td>
+                    <td rowspan="2">
+            <input class="yellowstrut" size="1" id="strutBfoot" type="text" placeholder="Strut B">
+                  </td>
+                    <td rowspan="2" style="font-size: 20px">Feet</td>
+                  <td rowspan="2">
+            <input class="yellowstrut" size="1" id="strutBinch" type="text" placeholder="Strut A"> 
+                  </td>
+                  <td>
+            <input style="font-size:25px;background-color:#fff737;color: black;border: 4px solid black;border-radius: 4px;"size="1" id="strutBinchnumer" type="text" placeholder="Strut A">
+                    <hr>
+                    </td>
+                    <td rowspan="2" style="font-size: 20px">Inches</td>
+                  </tr>
+                  <tr>            
+                    <td><input style="font-size:25px;background-color:#fff737;color: black;border: 4px solid black;border-radius: 4px;" size="1" id="strutBinchdenom" type="text" placeholder="Strut A"></td>
+                  </tr>
+            </tbody>
+    </table> 
+                    
+                 <hr class="horrow3">   
+          x65 Total
+                </div>
+
+                </div>
+                
+                
+
+                
+                 <div class="boxchange2 boxborder2">
+            
+            <h3>Conduit Hub</h3>
+      <img src="addedlength.png" alt="Mountains">
+         <div class="textcenter">     
+            <b>Added Length</b>
+           
+        <input style="font-size:25px;background-color:#37ff75;color: black;border: 4px solid black;border-radius: 4px;" size="1" id="hubInch" type="text" placeholder="Added"
+    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Added'"             
+    oninput="mainConvert(document.getElementById('main').value);
+             pipeDiameterInchConvert(document.getElementById('pipediameterInch').value);" 
+    
+    onchange="mainConvert(document.getElementById('main').value);
+              pipeDiameterInchConvert(document.getElementById('pipediameterInch').value);"> 
+                     
+            </div> 
+            
+            </div>
+                
+               
+                
+                <div class="clearfix"></div>
+             <p> Struts per Pole:</p>
+                
+<p>
+        <input type="radio" name="poleimp" class="tablinks3"  onclick="openCity3(event, 'numberimp1');" id="ratioimpOne">1
+        <input type="radio" name="poleimp" class="tablinks3"  onclick="openCity3(event, 'numberimp2');" id="ratioimpTwo">2
+        <input type="radio" name="poleimp" class="tablinks3"  onclick="openCity3(event, 'numberimp3');" id="ratioimpThree">3
+        <input type="radio" name="poleimp" class="tablinks3"  onclick="openCity3(event, 'numberimp4');" id="ratioimpFour">4
+</p> 
+                
+<div id="numberimp1" class="tabcontent3">
+<p>
+    A x30 
+        <input class="redstrut" size="9" id="strutimpA1" type="text" placeholder="Strut A">
+</p>
+    
+<p>
+    B x35 
+        <input class="yellowstrut" size="10" id="strutimpB1" type="text" placeholder="Strut B">
+</p>
+                </div>
+
+<div id="numberimp2" class="tabcontent3">
+<p>
+    A+B x30
+    
+        <input class="redstrut" size="4" id="strutimpA2" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutimpB2" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutimpSum2" type="text" placeholder="Strut B"></p>
+    
+    
+    
+    <p> B x5<input class="redstrutspare" size="4" type="text" placeholder="Spare A">
+    
+        <input class="yellowstrut" size="4" id="strutimpB21" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutimpSum21" type="text" placeholder="Strut B"></p>
+</div>
+
+<div id="numberimp3" class="tabcontent3">
+   <p>
+    A+B+B x10
+    
+        <input class="redstrut" size="4" id="strutimpA3" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutimpB3" type="text" placeholder="Strut B">
+       
+       <input class="yellowstrut" size="4" id="strutimpB31" type="text" placeholder="Strut B">
+    =
+       <input style="font-size:50px;" size="4" id="strutimpSum3" type="text" placeholder="Strut B"
+ ></p>
+    
+    <p>
+    A+A+B x10
+    
+        <input class="redstrut" size="4" id="strutimpA31" type="text" placeholder="Strut A">
+        
+        <input class="redstrut" size="4" id="strutimpA32" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutimpB32" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutimpSum31" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B x2
+    
+        <input class="redstrutspare" size="4" type="text" placeholder="Spare A">
+
+        <input class="yellowstrut" size="4" id="strutimpB33" type="text" placeholder="Strut B">
+       
+        <input class="yellowstrut" size="4" id="strutimpB34" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutimpSum32" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B x1
+    
+        <input class="redstrutspare" size="4" type="text" placeholder="Spare A" readonly>
+
+        <input class="yellowstrutspare" size="4" type="text" placeholder="Spare B" readonly>
+       
+        <input class="yellowstrut" size="4" id="strutimpB35" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutimpSum33" type="text" placeholder="Strut B"></p>
+    
+    
+</div>
+
+<div id="numberimp4" class="tabcontent3">
+<p>
+    A+A+B+B x15
+    
+        <input class="redstrut" size="2" id="strutimpA4" type="text" placeholder="Strut A">
+        
+        <input class="redstrut" size="2" id="strutimpA41" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="2" id="strutimpB4" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutimpB41" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutimpSum4" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B+B x1
+    
+        <input style="font-size:50px;background-color:#e8e8e8;color: black;border: 4px solid white;border-radius: 4px;" size="2" type="text" placeholder="" readonly>
+        
+        <input class="yellowstrut" size="2" id="strutimpB46" type="text" placeholder="Strut B">
+
+        <input class="yellowstrut" size="2" id="strutimpB42" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutimpB43" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutimpSum41" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B x1
+    
+        <input class="redstrutspare" size="2" type="text" placeholder="Spare A" readonly>
+        
+        <input class="redstrutspare" size="2" type="text" placeholder="Spare A" readonly> 
+
+        <input class="yellowstrut" size="2" id="strutimpB44" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutimpB45" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutimpSum42" type="text" placeholder="Strut B"></p>
+    
+    
+    
+</div>
+                
+                
+                
+                
+                
+                
+               
+                
+           <hr class="horrow3">
+        
+        <h3>FLATTENING</h3>
+            
+        <img src="strutdiameter.png" alt="Mountains">
+      <div class="textcenter">       
+    <p> Note: use O.D. (outer diameter)
+    <input 
+style="font-size:40px;text-align: center;background-color:#ffffff;color: black;border: 3px solid black;border-radius: 4px;" size="2" id="pipediameterInch" type="text" placeholder="pipe diameter"
+   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diameter'"          
+  oninput="pipeDiameterInchConvert(this.value);mainConvert(document.getElementById('main').value)" onchange="pipeDiameterInchConvert(this.value);mainConvert(document.getElementById('main').value)"> 
+    </p> 
+    </div> 
+      
+                <table class="textcenter" width="100%">
+  <tr>
+      <th>me</th>
+  </tr>
+  <tr>
+      <th class="textleft">Flattened Length</th>
+      
+    <td><input size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="flattenedlengthInch" type="text" placeholder="subOne"></td>
+  </tr>
+  <tr>
+      <th class="textleft">Added Length Conduit Hub</th>
+      
+    <td><input  size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="addedflattenedhubInch" type="text" placeholder="subOne"></td>
+      
+  </tr>
+  <tr>
+      <th class="textleft">Total Flattened Length (recommended)</th>
+      
+    <td><input  size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="flattenedlengthtotalInch" type="text" placeholder="subOne"></td>
+  </tr>
+</table>  
+             
+ 
+        <p></p>
+           <br>
+           
+                
+                
+                
+                
+                
+                
+                
+           <hr class="horrow3">
+           
+        <h3>MAKING HOLES</h3>
+    <img src="strutplace.png" width="100%" height="auto">
+           
+           <hr class="horrow3">
+           
+        <h3>BENDING</h3>
+    <img src="2vbending.png" width="100%" height="auto">
+           
+           <hr class="horrow3">
+           
+        <h3>ASSEMBLY</h3>
+    <img src="2vassembly.png" width="100%" height="auto">
+           
+           
+           
+           <hr class="horrow3">
+           
+        <h3>BILL OF MATERIALS</h3>
+           <div class="boxchange2 boxborder">
+               
+               <h3>STRUTS</h3>
+    <img src="strutplace.png" width="100%" height="auto">
+        </div>
+           
+           <div class="boxchange2 boxborder">
+           <h3>BOLTS</h3>
+           
+           You need x26 Bolts.
+           You need x26 Nuts.
+           You need x42 Washers.
+           OR
+           You need x26 Flange Bolts.
+           You need x26 Flange Nuts.
+            
+        <img src="boltlength.png" alt="Mountains">
+    <div class="textcenter">       
+    <p>
+    <input 
+style="font-size:40px;text-align: center;background-color:#ffffff;color: black;border: 3px solid black;border-radius: 4px;" size="2" id="pipegaugeInch" type="text" placeholder="pipe diameter"
+   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diameter'"          
+  oninput="pipeGaugeConvertInch(this.value);mainConvert(document.getElementById('main').value)" 
+           onchange="pipeGaugeConvertInch(this.value);mainConvert(document.getElementById('main').value)">
+    </p> 
+    </div>  
+               
+<table class="textcenter" width="100%">
+  <tr>
+      <th></th>
+  </tr>
+                
+    <tr>
+      <th class="textleft">Bolt Length (recommended)</th>
+      
+    <td><input size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="boltlengthInch" type="text" placeholder="subOne"></td>
+  </tr>
+      
+    
+               </table>
+               
+               
+            
+            
+           
+           </div>
+           
+           <div class="clearfix"></div>
+           <hr class="horrow3">
+           
+            <h3>DOME WEIGHT</h3>
+    
+    
+                  <table class="textcenter" width="100%">
+  <tr>
+      <th></th>
+  </tr>
+  <tr>
+      <th class="textleft">Strut Diameter</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="weightdiameterimp" type="text" placeholder="subOne"</td>
+  </tr>
+  <tr>
+      <th class="textleft">Strut Wall Thickness </th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="weightgaugeimp" type="text" placeholder="subOne">
+            <p></p></td>
+      
+  </tr>
+  <tr>
+      <th class="textleft">Total Length of Struts</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;" 
+            id="totallengthimp" type="text" placeholder="subOne" readonly></td>
+  </tr>
+  <tr>
+      <th class="textleft">Total Weight of Dome </th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;" 
+            id="totalweightpounds" type="text" placeholder="subOne" readonly></td>
+  </tr>                    
+                      
+</table>  
+      
+                
+        <hr class="horrow3">
+        
+    </div> 
+                
+<div id="convert2" class="tabcontent2">  
+
+        <div class="boxchange2">
+            
+                <h3>CUTTING</h3>
+                    
+<p>A x30  <input class="redstrut"
+          size="1" id="strutAm" type="text" placeholder="Strut A">m
+          <input class="redstrut"
+          size="1" id="strutAcm" type="text" placeholder="Strut A">cm         
+          <input class="redstrut"
+          size="1" id="strutAmm" type="text" placeholder="Strut A">mm          
+                    </p>
+    
+<p>B x35 <input class="yellowstrut" 
+          size="1" id="strutBm" type="text" placeholder="Strut B">m
+        <input class="yellowstrut" 
+          size="1" id="strutBcm" type="text" placeholder="Strut B">cm
+        <input class="yellowstrut" 
+          size="1" id="strutBmm" type="text" placeholder="Strut B">mm
+                    </p>
+                <hr class="horrow3"> 
+                x65 Total
+              
+                </div>
+                
+                
+
+                
+                 <div class="boxchange2 boxborder2">
+            
+            <h3>Conduit Hub</h3>
+      <img src="addedlength.png" alt="Mountains">
+         <div class="textcenter">     
+            <b>Added Length</b>
+
+        <input style="font-size:25px;background-color:#37ff75;color: black;border: 4px solid black;border-radius: 4px;" size="1" id="hubCm" type="text" placeholder="Added"
+    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Added'"             
+    oninput="mainConvert(document.getElementById('main').value);pipeDiameterMilConvert(document.getElementById('pipediameter').value)" onchange="mainConvert(document.getElementById('main').value);pipeDiameterMilConvert(document.getElementById('pipediameter').value)"> 
+
+              
+            </div> 
+            
+            </div>
+                
+               
+                
+                <div class="clearfix"></div>
+             <p> Struts per Pole:</p>
+                
+<p>
+        <input type="radio" name="polemet" class="tablinks4" value="1" onclick="openCity4(event, 'numbermet1');" id="ratiometOne">1
+        <input type="radio" name="polemet" class="tablinks4" value="2" onclick="openCity4(event, 'numbermet2');" id="ratiometTwo">2
+        <input type="radio" name="polemet" class="tablinks4" value="3" onclick="openCity4(event, 'numbermet3');" id="ratiometThree">3
+        <input type="radio" name="polemet" class="tablinks4" value="4" onclick="openCity4(event, 'numbermet4');" id="ratiometFour">4
+</p> 
+                
+<div id="numbermet1" class="tabcontent4">
+<p>
+    A x30 
+        <input class="redstrut" size="9" id="strutmetA1" type="text" placeholder="Strut A">
+</p>
+    
+<p>
+    B x35 
+        <input class="yellowstrut" size="10" id="strutmetB1" type="text" placeholder="Strut B">
+</p>
+                </div>
+
+<div id="numbermet2" class="tabcontent4">
+<p>
+    A+B x30
+    
+        <input class="redstrut" size="4" id="strutmetA2" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutmetB2" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutmetSum2" type="text" placeholder="Strut B"></p>
+    
+    
+    
+    <p> B x5<input class="redstrutspare" size="4" type="text" placeholder="Spare A">
+    
+        <input class="yellowstrut" size="4" id="strutmetB21" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutmetSum21" type="text" placeholder="Strut B"></p>
+</div>
+
+<div id="numbermet3" class="tabcontent4">
+   <p>
+    A+B+B x10
+    
+        <input class="redstrut" size="4" id="strutmetA3" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutmetB3" type="text" placeholder="Strut B">
+       
+       <input class="yellowstrut" size="4" id="strutmetB31" type="text" placeholder="Strut B">
+    =
+       <input style="font-size:50px;" size="4" id="strutmetSum3" type="text" placeholder="Strut B"
+ ></p>
+    
+    <p>
+    A+A+B x10
+    
+        <input class="redstrut" size="4" id="strutmetA31" type="text" placeholder="Strut A">
+        
+        <input class="redstrut" size="4" id="strutmetA32" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="4" id="strutmetB32" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutmetSum31" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B x2
+    
+        <input class="redstrutspare" size="4" type="text" placeholder="Spare A">
+
+        <input class="yellowstrut" size="4" id="strutmetB33" type="text" placeholder="Strut B">
+       
+        <input class="yellowstrut" size="4" id="strutmetB34" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutmetSum32" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B x1
+    
+        <input class="redstrutspare" size="4" type="text" placeholder="Spare A" readonly>
+
+        <input class="yellowstrutspare" size="4" type="text" placeholder="Spare B" readonly>
+       
+        <input class="yellowstrut" size="4" id="strutmetB35" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="4" id="strutmetSum33" type="text" placeholder="Strut B"></p>
+    
+    
+</div>
+
+<div id="numbermet4" class="tabcontent4">
+<p>
+    A+A+B+B x15
+    
+        <input class="redstrut" size="2" id="strutmetA4" type="text" placeholder="Strut A">
+        
+        <input class="redstrut" size="2" id="strutmetA41" type="text" placeholder="Strut A">
+
+        <input class="yellowstrut" size="2" id="strutmetB4" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutmetB41" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutmetSum4" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B+B x1
+    
+        <input style="font-size:50px;background-color:#e8e8e8;color: black;border: 4px solid white;border-radius: 4px;" size="2" type="text" placeholder="" readonly>
+        
+        <input class="yellowstrut" size="2" id="strutmetB46" type="text" placeholder="Strut B">
+
+        <input class="yellowstrut" size="2" id="strutmetB42" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutmetB43" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutmetSum41" type="text" placeholder="Strut B"></p>
+    
+    <p>
+    B+B x1
+    
+        <input class="redstrutspare" size="2" type="text" placeholder="Spare A" readonly>
+        
+        <input class="redstrutspare" size="2" type="text" placeholder="Spare A" readonly> 
+
+        <input class="yellowstrut" size="2" id="strutmetB44" type="text" placeholder="Strut B">
+    
+        <input class="yellowstrut" size="2" id="strutmetB45" type="text" placeholder="Strut B">
+    =
+        <input style="font-size:50px;" size="2" id="strutmetSum42" type="text" placeholder="Strut B"></p>
+    
+    
+    
+</div>
+                
+                
+                
+                
+                
+                
+               
+                
+           <hr class="horrow3">
+        
+        <h3>FLATTENING</h3>
+            
+        <img src="strutdiameter.png" alt="Mountains">
+      <div class="textcenter">       
+    <p> Note: use O.D. (outer diameter)
+    <input 
+style="font-size:40px;text-align: center;background-color:#ffffff;color: black;border: 3px solid black;border-radius: 4px;" size="2" id="pipediameterMil" type="text" placeholder="pipe diameter"
+   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diameter'"          
+  oninput="pipeDiameterMilConvert(this.value);mainConvert(document.getElementById('main').value)" onchange="pipeDiameterMilConvert(this.value);mainConvert(document.getElementById('main').value)"> 
+    </p> 
+    </div> 
+ 
+                <table class="textcenter" width="100%">
+  <tr>
+      <th>inch</th>
+  </tr>
+  <tr>
+      <th class="textleft">Flattened Length</th>
+      
+    <td><input size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="flattenedlengthMil" type="text" placeholder="subOne"></td>
+  </tr>
+  <tr>
+      <th class="textleft">Added Length Conduit Hub</th>
+      
+    <td><input  size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="addedflattenedhubMil" type="text" placeholder="subOne">
+      </td>
+      
+  </tr>
+                    
+  <tr>
+      <th class="textleft">Total Flattened Length (recommended)</th>
+      
+    <td><input  size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="flattenedlengthtotalMil" type="text" placeholder="subOne"></td>
+  </tr>
+</table>  
+                
+        <p></p>
+           <br>
+           
+                
+                
+                
+                
+                
+                
+                
+           <hr class="horrow3">
+           
+        <h3>MAKING HOLES</h3>
+    <img src="strutplace.png" width="100%" height="auto">
+           
+           <hr class="horrow3">
+           
+        <h3>BENDING</h3>
+    <img src="2vbending.png" width="100%" height="auto">
+           
+           <hr class="horrow3">
+           
+        <h3>ASSEMBLY</h3>
+    <img src="2vassembly.png" width="100%" height="auto">
+           
+           
+           
+           <hr class="horrow3">
+           
+        <h3>BILL OF MATERIALS</h3>
+           <div class="boxchange2 boxborder">
+               
+               <h3>STRUTS</h3>
+    <img src="strutplace.png" width="100%" height="auto">
+        </div>
+           
+           <div class="boxchange2 boxborder">
+           <h3>BOLTS</h3>
+           
+           You need x26 Bolts.
+           You need x26 Nuts.
+           You need x42 Washers.
+           OR
+           You need x26 Flange Bolts.
+           You need x26 Flange Nuts.
+            
+        <img src="boltlength.png" alt="Mountains">
+    <div class="textcenter">       
+    <p>
+    <input 
+style="font-size:40px;text-align: center;background-color:#ffffff;color: black;border: 3px solid black;border-radius: 4px;" size="2" id="pipegaugeMil" type="text" placeholder="pipe diameter"
+   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diameter'"          
+  oninput="pipeGaugeConvertMil(this.value);mainConvert(document.getElementById('main').value)" 
+           onchange="pipeGaugeConvertMil(this.value);mainConvert(document.getElementById('main').value)">
+    </p> 
+    </div>  
+               
+<table class="textcenter" width="100%">
+  <tr>
+      <th></th>
+  </tr>
+                
+    <tr>
+      <th class="textleft">Bolt Length (recommended)</th>
+      
+    <td><input size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="boltlengthMil" type="text" placeholder="subOne"></td>
+  </tr>
+      
+    
+               </table>
+               
+               
+            
+            
+           
+           </div>
+           
+           <div class="clearfix"></div>
+           <hr class="horrow3">
+           
+            <h3>DOME WEIGHT</h3>
+           
+    <table class="textcenter" width="100%">
+  <tr>
+      <th></th>
+  </tr>
+  <tr>
+      <th class="textleft"> Strut Diameter</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="weightdiametermet" type="text" placeholder="subOne"></td>
+  </tr>
+  <tr>
+      <th class="textleft">Strut Wall Thickness </th>
+      
+    <td> <input class="goright" size="4px"
+            style="text-align: center;border: 2px solid black;"
+            id="weightgaugemet" type="text" placeholder="subOne"></td>
+      
+  </tr>
+  <tr>
+      <th class="textleft">Total Length of Struts</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;" 
+            id="totallengthmet" type="text" placeholder="subOne" readonly></td>
+  </tr>
+    <tr>
+      <th class="textleft">Total Weight of Dome</th>
+      
+    <td><input class="goright" size="4px"
+            style="text-align: center;" 
+            id="totalweightkilos" type="text" placeholder="subOne" readonly></td>
+  </tr>       
+</table>  
+              
+        <hr class="horrow3">
+
+</div>
+                
+    </div>    
+    </div>
+    </div>
+    
+    <br>
+    <br>
+    
+     <hr>
+<div style="text-align: left; font-size: 8px"><b>page created July 10, 2018</b> (updated July 10, 2018)</div>
+
+    <script>
+    	    	function mainConvert(valNum) {
+var Radius = valNum*0.5;                 
+var StrutA = (Radius*0.54653);
+var StrutB = (Radius*0.61803);                    
+var Perimeter = StrutB*10;                    
+var BaseArea = 10 * (StrutB*StrutB) / ( 4 * Math.tan( (Math.PI/10) ) );                     
+                                                  
+/* Custom Conversion */
+var ConduitHub = 1*document.getElementById("hub").value;                   
+var StrutAn = ConduitHub+(Radius*0.54653);
+var StrutBn = ConduitHub+(Radius*0.61803); 
+                    
+/* Imperial Conversion */
+var ConduitHubInch = (1*document.getElementById("hubInch").value)/12;                    
+var StrutAImperial = ConduitHubInch+(Radius*0.54653);
+var StrutBImperial = ConduitHubInch+(Radius*0.61803);                    
+                    
+var StrutAFoot = Math.trunc(StrutAImperial);
+var StrutBFoot = Math.trunc(StrutBImperial);
+                    
+var StrutAInchDecimal = StrutAImperial-StrutAFoot;
+var StrutBInchDecimal = StrutBImperial-StrutBFoot;
+                    
+var StrutAInchRaw = StrutAInchDecimal*12;
+var StrutAInch = Math.trunc(StrutAInchRaw);                
+var StrutAFractionDecimal= StrutAInchRaw-StrutAInch;
+var sFour=32;                    
+var StrutAFractionRaw=StrutAFractionDecimal*sFour;                    
+var StrutAFraction=Math.round(StrutAFractionRaw);
+var StrutANumerator=reduce(StrutAFraction,sFour);
+var StrutADenomenator=reduce2(StrutAFraction,sFour);  
+                    
+var StrutBInchRaw = StrutBInchDecimal*12;
+var StrutBInch = Math.trunc(StrutBInchRaw);                
+var StrutBFractionDecimal= StrutBInchRaw-StrutBInch;
+var sFour=32;                    
+var StrutBFractionRaw=StrutBFractionDecimal*sFour;                    
+var StrutBFraction=Math.round(StrutBFractionRaw);
+var StrutBNumerator=reduce(StrutBFraction,sFour);
+var StrutBDenomenator=reduce2(StrutBFraction,sFour);
+                    
+/* Metric Conversion */          
+var ConduitHubMil = (1*document.getElementById("hubCm").value)/1000;                     
+var StrutAMetric = ConduitHubMil+(Radius*0.54653);
+var StrutBMetric = ConduitHubMil+(Radius*0.61803);
+                    
+var StrutAMeters = Math.trunc(StrutAMetric);
+var StrutBMeters = Math.trunc(StrutBMetric); 
+                    
+var StrutACmDecimal = StrutAMetric-StrutAMeters;
+var StrutBCmDecimal = StrutBMetric-StrutBMeters;                    
+                              
+var StrutACmRaw = StrutACmDecimal*100;
+var StrutACm = Math.trunc(StrutACmRaw);
+var StrutAMmDecimal= StrutACmRaw-StrutACm;
+var StrutAMmRaw = StrutAMmDecimal*10;                                       
+var StrutAMm = Math.round(StrutAMmRaw);                    
+                    
+var StrutBCmRaw = StrutBCmDecimal*100;
+var StrutBCm = Math.trunc(StrutBCmRaw);
+var StrutBMmDecimal= StrutBCmRaw-StrutBCm;
+var StrutBMmRaw = StrutBMmDecimal*10;                                       
+var StrutBMm = Math.round(StrutBMmRaw);
+                    
+                    /* Imperial Dome Weight */ 
+var TotalLengthImp = (StrutAImperial*30) + (StrutBImperial*35);
+var WeightDiameterImp = document.getElementById("pipediameterInch").value;                    
+var WeightGaugeImp = document.getElementById("pipegaugeInch").value;
+
+var WeightDiameterInImp = WeightDiameterImp-(WeightGaugeImp*2);                   
+var WeightThicknessImp = Math.pow(WeightDiameterImp,2)-Math.pow(WeightDiameterInImp,2);
+var WeightRawInch = (Math.PI/4)*(0.28)*WeightThicknessImp;
+var WeightRawFoot =  WeightRawInch*12;                   
+var WeightImperial =  WeightRawFoot*TotalLengthImp;
+                    
+                    /* Metric Dome Weight */ 
+var TotalLengthMet = (StrutAMetric*30) + (StrutBMetric*35);
+var WeightDiameterMet = document.getElementById("pipediameterMil").value;                    
+var WeightGaugeMet = document.getElementById("pipegaugeMil").value;                
+var WeightDiameterInMet = WeightDiameterMet-(WeightGaugeMet*2);
+                    
+var WeightDiameterMeters =  WeightDiameterMet/1000;                   
+var WeightDiameterInMeters =  WeightDiameterInMet/1000;                   
+var WeightThicknessMet = Math.pow(WeightDiameterMeters,2)-Math.pow(WeightDiameterInMeters,2);            
+var WeightRawMil = ((Math.PI/4)*(7850))*WeightThicknessMet;                  
+var WeightMetric =  WeightRawMil*TotalLengthMet;                    
+                                       
+    
+/* Dome Dimensions */     
+document.getElementById("baseDiameter").value=valNum;
+document.getElementById("height").value=Radius;
+document.getElementById("perimeter").value=Perimeter;
+document.getElementById("baseArea").value=BaseArea; 
+                    
+/* Imperial Dome Weight */ 
+document.getElementById("totallengthimp").value=TotalLengthImp;                    
+document.getElementById("weightdiameterimp").value=WeightDiameterImp;                   
+document.getElementById("weightgaugeimp").value=WeightGaugeImp;
+document.getElementById("totalweightpounds").value=WeightImperial;
+                    
+/* Metric Dome Weight */ 
+document.getElementById("totallengthmet").value=TotalLengthMet;                    
+document.getElementById("weightdiametermet").value=WeightDiameterMet;                   
+document.getElementById("weightgaugemet").value=WeightGaugeMet;
+document.getElementById("totalweightkilos").value=WeightMetric;                   
+                    
+/* Custom Cutting */                
+document.getElementById("strutA0").value= StrutAn;
+document.getElementById("strutB0").value= StrutBn; 
+
+                    /* Custom Per Pole */                     
+
+document.getElementById("strutA1").value= StrutAn;
+document.getElementById("strutA2").value= StrutAn;                    
+
+document.getElementById("strutA3").value= StrutAn;
+document.getElementById("strutA31").value= StrutAn;
+document.getElementById("strutA32").value= StrutAn;
+                    
+document.getElementById("strutA4").value= StrutAn;
+document.getElementById("strutA41").value= StrutAn;                    
+                    
+
+document.getElementById("strutB1").value= StrutBn;
+document.getElementById("strutB2").value= StrutBn;                    
+document.getElementById("strutB21").value= StrutBn;
+document.getElementById("strutB3").value= StrutBn;
+document.getElementById("strutB31").value= StrutBn;                    
+document.getElementById("strutB32").value= StrutBn;                    
+document.getElementById("strutB33").value= StrutBn;                    
+document.getElementById("strutB34").value= StrutBn; 
+document.getElementById("strutB35").value= StrutBn;                    
+                    
+document.getElementById("strutB4").value= StrutBn;
+document.getElementById("strutB41").value= StrutBn;                     
+document.getElementById("strutB42").value= StrutBn;                     
+document.getElementById("strutB43").value= StrutBn;                     
+document.getElementById("strutB44").value= StrutBn;                     
+document.getElementById("strutB45").value= StrutBn;
+document.getElementById("strutB46").value= StrutBn;
+                    
+document.getElementById("strutSum2").value= StrutAn+StrutBn;               
+document.getElementById("strutSum21").value= StrutAn+StrutBn;
+                                      
+document.getElementById("strutSum3").value= StrutAn+StrutBn+StrutBn;
+document.getElementById("strutSum31").value= StrutAn+StrutAn+StrutBn;                    
+document.getElementById("strutSum32").value= StrutBn+StrutBn;                    
+document.getElementById("strutSum33").value= StrutBn;                    
+                    
+document.getElementById("strutSum4").value= StrutAn+StrutAn+StrutBn+StrutBn;
+document.getElementById("strutSum41").value= StrutBn+StrutBn+StrutBn;                     
+document.getElementById("strutSum42").value= StrutBn+StrutBn;                     
+                    
+                    
+/* Imperial Cutting */                                      
+document.getElementById("strutAfoot").value= StrutAFoot;          
+document.getElementById("strutAinch").value= StrutAInch;            
+document.getElementById("strutAinchnumer").value= StrutANumerator;
+document.getElementById("strutAinchdenom").value= StrutADenomenator;    
+                                      
+document.getElementById("strutBfoot").value= StrutBFoot;          
+document.getElementById("strutBinch").value= StrutBInch;            
+document.getElementById("strutBinchnumer").value= StrutBNumerator;
+document.getElementById("strutBinchdenom").value= StrutBDenomenator;
+                    
+                     /* Imperial Per Pole */                     
+
+document.getElementById("strutimpA1").value= StrutAImperial;
+document.getElementById("strutimpA2").value= StrutAImperial;                    
+
+document.getElementById("strutimpA3").value= StrutAImperial;
+document.getElementById("strutimpA31").value= StrutAImperial;
+document.getElementById("strutimpA32").value= StrutAImperial;
+                    
+document.getElementById("strutimpA4").value= StrutAImperial;
+document.getElementById("strutimpA41").value= StrutAImperial;                    
+                    
+
+document.getElementById("strutimpB1").value= StrutBImperial;
+document.getElementById("strutimpB2").value= StrutBImperial;                    
+document.getElementById("strutimpB21").value= StrutBImperial;
+document.getElementById("strutimpB3").value= StrutBImperial;
+document.getElementById("strutimpB31").value= StrutBImperial;                    
+document.getElementById("strutimpB32").value= StrutBImperial;                    
+document.getElementById("strutimpB33").value= StrutBImperial;                    
+document.getElementById("strutimpB34").value= StrutBImperial; 
+document.getElementById("strutimpB35").value= StrutBImperial;                    
+                    
+document.getElementById("strutimpB4").value= StrutBImperial;
+document.getElementById("strutimpB41").value= StrutBImperial;                     
+document.getElementById("strutimpB42").value= StrutBImperial;                     
+document.getElementById("strutimpB43").value= StrutBImperial;                     
+document.getElementById("strutimpB44").value= StrutBImperial;                     
+document.getElementById("strutimpB45").value= StrutBImperial;
+document.getElementById("strutimpB46").value= StrutBImperial;
+                    
+document.getElementById("strutimpSum2").value= StrutAImperial+StrutBImperial;               
+document.getElementById("strutimpSum21").value= StrutAImperial+StrutBImperial;
+                                      
+document.getElementById("strutimpSum3").value= StrutAImperial+StrutBImperial+StrutBImperial;
+document.getElementById("strutimpSum31").value= StrutAImperial+StrutAImperial+StrutBImperial;                    
+document.getElementById("strutimpSum32").value= StrutBImperial+StrutBImperial;                    
+document.getElementById("strutimpSum33").value= StrutBImperial;                    
+                    
+document.getElementById("strutimpSum4").value= StrutAImperial+StrutAImperial+StrutBImperial+StrutBImperial;
+document.getElementById("strutimpSum41").value= StrutBImperial+StrutBImperial+StrutBImperial;                     
+document.getElementById("strutimpSum42").value= StrutBImperial+StrutBImperial;   
+                    
+                    
+/* Metric Cutting */                                    
+document.getElementById("strutAm").value= StrutAMeters; 
+document.getElementById("strutAcm").value= StrutACm; 
+document.getElementById("strutAmm").value= StrutAMm; 
+                    
+document.getElementById("strutBm").value= StrutBMeters; 
+document.getElementById("strutBcm").value= StrutBCm; 
+document.getElementById("strutBmm").value= StrutBMm;
+                    
+                    /* Metric Per Pole */                     
+
+document.getElementById("strutmetA1").value= StrutAMetric;
+document.getElementById("strutmetA2").value= StrutAMetric;                    
+
+document.getElementById("strutmetA3").value= StrutAMetric;
+document.getElementById("strutmetA31").value= StrutAMetric;
+document.getElementById("strutmetA32").value= StrutAMetric;
+                    
+document.getElementById("strutmetA4").value= StrutAMetric;
+document.getElementById("strutmetA41").value= StrutAMetric;                    
+                    
+
+document.getElementById("strutmetB1").value= StrutBMetric;
+document.getElementById("strutmetB2").value= StrutBMetric;                    
+document.getElementById("strutmetB21").value= StrutBMetric;
+document.getElementById("strutmetB3").value= StrutBMetric;
+document.getElementById("strutmetB31").value= StrutBMetric;                    
+document.getElementById("strutmetB32").value= StrutBMetric;                    
+document.getElementById("strutmetB33").value= StrutBMetric;                    
+document.getElementById("strutmetB34").value= StrutBMetric; 
+document.getElementById("strutmetB35").value= StrutBMetric;                    
+                    
+document.getElementById("strutmetB4").value= StrutBMetric;
+document.getElementById("strutmetB41").value= StrutBMetric;                     
+document.getElementById("strutmetB42").value= StrutBMetric;                     
+document.getElementById("strutmetB43").value= StrutBMetric;                     
+document.getElementById("strutmetB44").value= StrutBMetric;                     
+document.getElementById("strutmetB45").value= StrutBMetric;
+document.getElementById("strutmetB46").value= StrutBMetric;
+                    
+document.getElementById("strutmetSum2").value= StrutAMetric+StrutBMetric;               
+document.getElementById("strutmetSum21").value= StrutAMetric+StrutBMetric;
+                                      
+document.getElementById("strutmetSum3").value= StrutAMetric+StrutBMetric+StrutBMetric;
+document.getElementById("strutmetSum31").value= StrutAMetric+StrutAMetric+StrutBMetric;                    
+document.getElementById("strutmetSum32").value= StrutBMetric+StrutBMetric;                    
+document.getElementById("strutmetSum33").value= StrutBMetric;                    
+                    
+document.getElementById("strutmetSum4").value= StrutAMetric+StrutAMetric+StrutBMetric+StrutBMetric;
+document.getElementById("strutmetSum41").value= StrutBMetric+StrutBMetric+StrutBMetric;                     
+document.getElementById("strutmetSum42").value= StrutBMetric+StrutBMetric;                         
+                    
+                    
+}
+  
+        
+/* Custom Pipe Diameter */           
+    function pipeDiameterConvert(valNum) {
+  var ConduitHubFlattened = 1*document.getElementById("hub").value;    
+  var Circumference = valNum*Math.PI;
+  var FlattenedWidth = Circumference/2;
+  var rad = 62.7* Math.PI/180;      
+  var FlattenedLength = FlattenedWidth/2*(Math.tan(rad));      
+        
+  document.getElementById("flattenedlength").value= FlattenedLength;
+  document.getElementById("addedflattenedhub").value= ConduitHubFlattened;
+  document.getElementById("flattenedlengthtotal").value= FlattenedLength+ConduitHubFlattened;        
+}    
+        
+/* Imperial Pipe Diameter */         
+    function pipeDiameterInchConvert(valNum) {
+  var ConduitHubInchFlattened = 1*document.getElementById("hubInch").value;    
+  var CircumferenceInch = valNum*Math.PI;
+  var FlattenedWidthInch = CircumferenceInch/2;
+  var radInch = 62.7* Math.PI/180;      
+  var FlattenedLengthInch = FlattenedWidthInch/2*(Math.tan(radInch));      
+        
+    document.getElementById("flattenedlengthInch").value= FlattenedLengthInch;
+  document.getElementById("addedflattenedhubInch").value= ConduitHubInchFlattened;
+  document.getElementById("flattenedlengthtotalInch").value=  (FlattenedLengthInch+ConduitHubInchFlattened);       
+        
+}           
+/* Metric Pipe Diameter */     
+    function pipeDiameterMilConvert(valNum) {
+  var ConduitHubMilFlattened = 1*document.getElementById("hubCm").value;    
+  var CircumferenceMil = valNum*Math.PI;
+  var FlattenedWidthMil = CircumferenceMil/2;
+  var radMil = 62.7* Math.PI/180;      
+  var FlattenedLengthMil = FlattenedWidthMil/2*(Math.tan(radMil));      
+             
+  document.getElementById("flattenedlengthMil").value= FlattenedLengthMil*100;
+  document.getElementById("addedflattenedhubMil").value= ConduitHubMilFlattened*100;
+  document.getElementById("flattenedlengthtotalMil").value= (FlattenedLengthMil+ConduitHubMilFlattened)*100;       
+}            
+                
+        
+/* Custom Pipe Gauge */         
+        function pipeGaugeConvert(valNum) {
+            
+ var BoltLength = valNum*12;                
+  document.getElementById("boltlength").value=valNum*2;          
+            
+}
+        
+/* Imperial Pipe Gauge */         
+        function pipeGaugeConvertInch(valNum) {
+            
+ var BoltLengthInch = valNum*12;          
+            
+  document.getElementById("boltlengthInch").value=valNum*12;        
+            
+}
+    
+/* Metric Pipe Gauge */         
+        function pipeGaugeConvertMil(valNum) {
+            
+ var BoltLengthMil = valNum*12;          
+            
+  document.getElementById("boltlengthMil").value=valNum*100;        
+            
+}     
+        
+     function reduce(numerator,denominator){ 
+var gcd = function gcd(a,b){
+return b 
+? gcd(b, a%b) 
+: a
+}
+
+gcd = gcd(numerator,denominator)
+
+return [numerator/gcd];
+}
+        
+function reduce2(numerator,denominator){ 
+var gcd = function gcd(a,b){
+return b ? gcd(b, a%b) : a;
+};
+gcd = gcd(numerator,denominator);
+return [denominator/gcd];
+}
+
+      
+        
+        
+        
+        function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+        
+        function openCity2(evt, cityName) {
+    var i, tabcontent2, tablinks2;
+    tabcontent2 = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent2.length; i++) {
+        tabcontent2[i].style.display = "none";
+    }
+    tablinks2 = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks2.length; i++) {
+        tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+ 
+  function openCity3(evt, cityName) {
+    var i, tabcontent3, tablinks3;
+    tabcontent3 = document.getElementsByClassName("tabcontent3");
+    for (i = 0; i < tabcontent3.length; i++) {
+        tabcontent3[i].style.display = "none";
+    }
+    tablinks3 = document.getElementsByClassName("tablinks3");
+    for (i = 0; i < tablinks3.length; i++) {
+        tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}          
+        
+         function openCity4(evt, cityName) {
+    var i, tabcontent4, tablinks4;
+    tabcontent4 = document.getElementsByClassName("tabcontent4");
+    for (i = 0; i < tabcontent4.length; i++) {
+        tabcontent4[i].style.display = "none";
+    }
+    tablinks4 = document.getElementsByClassName("tablinks4");
+    for (i = 0; i < tablinks4.length; i++) {
+        tablinks4[i].className = tablinks4[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}            
+        
+        document.getElementById("ratioOne").click();
+        document.getElementById("ratioimpOne").click();
+        document.getElementById("ratiometOne").click();
+        document.getElementById("convertNone").click();
+
+</script>
+    
+</body>
+</html>

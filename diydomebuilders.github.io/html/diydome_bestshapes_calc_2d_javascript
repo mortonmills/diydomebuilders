@@ -1,0 +1,96 @@
+EQUATIONS
+
+table of contents
+-
+GROUP 1 - regular polygons 3 to 6 sides and circle
+GROUP 2 - regular polygons sideless shapes
+GROUP 3 - quartered or side divisions and or vertex divisions
+-
+
+GROUP 1
+equilateral triangle
+side = perimeter/3 
+area = side**2 * Math.sqrt(3) / 4
+
+square
+side = perimeter/4 
+area = side**2
+
+pentagon 
+side = perimeter/5 
+area = side**2 / 4 * Math.sqrt(25 + 10 * Math.sqrt(5))
+
+hexagon
+side = perimeter/6
+area = 3/2 * Math.sqrt(3) * side**2
+
+circle (note that circumference is perimeter)
+radius = perimeter / (Math.PI * 2) 
+area = Math.PI * radius**2
+
+
+GROUP 2 sideless shapes 
+equilateral triangle 2 sides
+side = (perimeter * (3/2))/3 . 
+area = side**2 * Math.sqrt(3) / 4
+
+
+square 3 sides
+side = (perimeter * (4/3))/4 
+area = side**2
+
+square 2 sides 90 degrees isosceles right triangle
+side = perimeter/2
+area = side**2 / 2
+
+
+pentagon 4 sides
+side = (perimeter(5/4))/5 
+area = side**2 / 4 * Math.sqrt(25 + 10 * Math.sqrt(5))
+
+pentagon 3 sides quadrilateral
+b = perimeter/3
+a = b / 2 * ( 1 + Math.sqrt(5) )
+height = 1/2*Math.sqrt(4*b**2-(a-b)**2);
+area = ( a + b ) / 2 * height									
+						
+pentagon 2 sides 108 36 36 internal
+side = perimeter/2
+base = side / 2 * ( 1 + Math.sqrt(5) )
+semi = perimeter + base / 2
+area = Math.sqrt(semi(semi - side)(semi - side)(semi - base))
+
+
+hexagon 5 sides
+side = (perimeter(6/5))/6
+area = 3/2 * Math.sqrt(3) * side**2
+
+hexagon 4 sides penta
+side = perimeter/4
+base = Math.sqrt(3) * side
+area = side*base + (side/2) * side/2
+						
+hexagon 3 sides quad is trapezoid
+b = perimeter/3
+a = b * 2
+height = 1/2*Math.sqrt(4*b**2-(a-b)**2);
+area = ( a + b ) / 2 * height						
+	
+hexagon 2 sides tri
+side = perimeter * (3 / 2)
+base = Math.sqrt(3) * side
+semi = (perimeter + base)/2
+area = Math.sqrt(semi * (semi - side)*(semi - side)*(semi - base));
+
+GROUP 3 center half cuts
+equilateral triangle
+side = perimeter * 2 / 3
+height = Math.sqrt(3) / 2 * side
+area = (side**2 * Math.sqrt(3) / 4)/2
+
+
+square
+pentagon
+hexagon
+
+ 

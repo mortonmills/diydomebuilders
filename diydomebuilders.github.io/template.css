@@ -1,0 +1,286 @@
+/* Keeps a scroll bar in side, prevents inconsistencies among webpages that don't need scroll bar */
+html { overflow-y: scroll;
+}
+
+/* background, font*/
+.bodypage {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.bodycalc {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+/* keeps title black but still usable as link to index */
+header a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+}
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.tabcontent2 {
+    display: none;
+    
+}
+.tabcontent2 {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.tabcontent3 {
+    display: none;
+
+}
+.tabcontent3 {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.tabcontent4 {
+    display: none;
+
+}
+.tabcontent4 {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+table {
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* various sizes for horizontal rows */
+
+
+.horrow {
+    width: 96%;
+}
+
+.horrow2 {
+    width: 42%;
+    }
+
+.horrow3 {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #000000;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+/* disables effects of text align center from body css */
+.noalign {
+    text-align:left;
+}
+
+/* adds margins to content following the header */
+.newmargin {
+    margin: 0px 60px 0px 60px;
+}
+
+/* fits images on the page without creating a scrollbar */
+.imagefit img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* centers image and is responsive to screen sizes */
+.gocent {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gocent2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.goleft {
+    float: left;
+}
+
+.goright {
+    float: right;
+}
+
+.textright {
+    text-align: right;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+/* adds a border to boxes */
+.boxborder {
+    
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.boxborder2 {
+    padding: 15px;
+    border: 3px dotted black;
+    border-radius: 4px;
+}
+
+/* Following Section is for putting images in a row on indexpage */
+
+.imagechange {
+    border-radius: 35px 35px 0px 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.boxchange2 {
+    
+    float: left;
+    width: 49.999999%;
+}
+
+.boxchange3 {
+    padding: 6px 6px;
+    float: left;
+    width: 33.2999999%;
+}
+
+.boxchange4 {
+    padding: 6px 6px;
+    float: left;
+    width: 24.999999%;
+}
+
+.boxchange5 {
+    
+    float: left;
+    width: 19.999999%;
+}
+
+.boxchange6 {
+    padding: 6px 6px;
+    float: left;
+    width: 16.5999999%;
+}
+
+.boxchange7 {
+    padding: 6px 6px;
+    float: left;
+    width: 14.19999999%;
+}
+
+.boxchange8 {
+    padding: 6px 6px;
+    float: left;
+    width: 12.4999999%;
+}
+
+.boxchange9 {
+    padding: 6px 6px;
+    float: left;
+    width: 11.0999999%;
+}
+
+.boxchange10 {
+    padding: 6px 6px;
+    float: left;
+    width: 9.999999%;
+}
+
+.boxchange60 {
+    
+    float: left;
+    width: 59.999999%;
+}
+
+.boxchange75 {
+    
+    float: left;
+    width: 74.999999%;
+}
+
+.boxchange4right {
+    
+    float: right;
+    width: 24.999999%;
+}
+@media only screen and (max-width: 1000px) {
+    
+}
+
+@media only screen and (max-width: 570px) {
+    .newmargin {
+        
+        margin: 0px;
+    }
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Following Section is for styling input fields */
+.redstrut {
+   font-size:50px;
+    background-color:#ff3737;
+    color: black;
+    border: 4px solid black;
+    border-radius: 4px;
+}
+
+
+.redstrutspare {
+   font-size:50px;
+    background-color:#ffc4c4;
+    color: black;
+    border: 4px solid white;
+    border-radius: 4px; 
+}
+
+.yellowstrut {
+   font-size:50px;
+    background-color:#fff737;
+    color: black;
+    border: 4px solid black;
+    border-radius: 4px;
+}
+
+.yellowstrutspare {
+   font-size:50px;
+    background-color:#fffdcf;
+    color: black;
+    border: 4px solid white;
+    border-radius: 4px; 
+}

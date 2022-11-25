@@ -1,0 +1,274 @@
+<!doctype html>
+<head id="head">
+<script src="../head.js"></script>
+</head>
+
+<script src="../cms.js"></script>
+
+<header id="header">
+<script src="../header.js"></script>
+</header>
+
+<nav id="navbar">
+<script src="../navbar.js"></script>
+</nav>
+
+
+
+
+<main>
+
+<div id="headline"></div>
+
+<script>
+let headline = document.getElementById("headline")
+
+let headlineName = `Intro to Geodesics`
+let dateCreated = `January 20, 2020`
+let dateUpdated = `January 20, 2020`
+let headlineImage = `linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), 
+			url('../images/shapes-circle.png');`
+
+headline.innerHTML = headlineMaker(headlineName, dateCreated, dateUpdated, headlineImage)
+</script>
+
+
+
+
+<div id="intro"></div>
+
+<script>
+let intro = document.getElementById("intro")
+
+let initialContent = `
+In the What is the Best Shape? (link) we learned that spheres and domes are the best shapes for covering space.
+`
+
+let figures =`
+geodesichelpgroup.png	Geodesic Help Group	O	2008	https://groups.google.com/forum/#!forum/geodesichelp
+`
+figures = figureMaker(figures) 
+
+let introContent = `
+
+	${figures}
+
+        This leads to our next question: How do we build a sphere or dome?
+        <br>
+        We will be focusing on a method for building spheres/domes known as <b>geodesics</b>.
+        <br>
+        What is geodesics?
+        <br>
+        <br>
+        (picture of monolithic vs frame vs panels)
+        <br>
+
+`
+
+intro.innerHTML = introMaker(initialContent, introContent)
+</script>
+
+
+
+<div id="tableOfContents"></div>
+
+<div id="frontpage"></div>
+
+<script>
+let tableOfContents = document.getElementById("tableOfContents")
+let frontpage = document.getElementById("frontpage")
+
+let sectionPage = `
+Polyhedra
+Frequency
+Class
+Breakdown
+Profile
+`
+
+tableOfContents.innerHTML = tableOfContentsMaker(sectionPage)
+
+
+
+let contentPage = [`
+Polyhedra
+`,
+`
+        <br>
+       Geodesics work in a way as one would combine shapes together. When it comes to shapes we are approximating the surfaces.
+        Much in the same way we might mix red and blue to get purple.
+       Progression of red to blue, a graduation of purple color.
+        <img src="../images/geodesics/geodesic-gradation.png" class="gocent"> 
+        if a sphere and an icosahedron had a baby then it would be a geodesic sphere. She has your vertices. And your faces.
+        <br>
+         <img src="../images/geodesics/geodesic-combine.png" class="gocent"> 
+        <br>
+        <br>
+`,
+`
+Frequency
+`,
+`
+<br>
+        Approximating shapes to give us a sphere-like structure opens a lot of options.
+        <br>
+        But it is important to remember that these are only approximations of spheres/domes. 
+        <br>
+        For lower frequencies it is would more practical to think of them as better resembling an icosahedron than a sphere. 
+        <br>
+        For example, a cube has a eight sides, an icosahedron (1v) has 20 sides, a 2v dome would have 40 sides. An ideal sphere has an infinite number of sides.
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-notsphere.png" class="gocent"> 
+        <br>
+        <br>
+        
+        <br>
+        Following this, If we look the floor area of a 2 frequency dome. 
+        <br>
+        We will notice that it is not a circle, but a 10 sided shape also known as an decagon. 
+        <br>
+        There are many stated disadvantages to geodesic domes, one in particular is furniture. This should only be a concern if the strut length is shorter than the furniture itself.
+        <br>
+        Another solution is to build a higher frequency dome and/or bigger dome. The curves of the wall aren't as prominent with larger structures. Example think of the earth being a sphere. But it was once considered to flat for exactly this reason.
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-floor.png" class="gocent"> 
+        <br>
+        <br>
+        
+        
+        
+        
+        
+        <br>
+        After looking at profile, you may have noticed that the odd frequencies cannot be made into a 1/2 sphere. 
+        <br>
+        1/2 sphere is the only part that is flat at the base for Class 1. 
+        <br>
+        To make use of a different dome profile other than 1/2, we will need to truncate the dome in order to get a flat base. 
+        <br>
+        (Note: Domes can be used without having a flat base but forces won't be distributed evenly across the dome.) 
+        <br>
+        There are several ways of doing this. One involves altering the geometry of the dome. Kruscke method.)
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-trunc.png" class="gocent"> 
+        <br>
+        <br>
+        
+        
+        <h4>Summary</h4>
+        <ul>
+        <li>The circle is the most efficient closed 2D shape.</li>
+        <li>The arch is the most efficient open 2D shape.</li>
+        <li>As shapes get larger, they become more efficient at covering space.</li>
+        </ul>
+    
+    
+    <br>
+    <br>
+`,
+`
+Class
+`,
+`
+<br>
+        Why a dome might feel smaller than a rectangular room of the same size.
+        <br>
+        There are 2 likely reasons for this.
+        <br>
+        One is that even though you have a great deal of volume for the surface area. The lack of surface area is going to make the room feel smaller. The more surface area, the larger the room might feel. A long hallway may feel large because it has a tremendous amount of surface area even though it lacks very much volume.
+        <br>
+        Secondly, your dome might not be tall enough. The moment the dome starts to curve inward, you may be left with the feeling of cramped. The solution for this is to make sure the first row of the dome is the same height as you are or alternatively, make a riser wall for the dome. Seeing as people are usually between 5 to 6 ft.
+        <br>
+        It would be a good idea to make the rows this tall on the mid-high frequency. The low frequency dome you may to have a riser wall instead. Or make another row that is completely vertical. Also may be good to add another 1ft or 2ft for head clearance for other movements like jumping.
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-cramped.png" class="gocent"> 
+        <br>
+        <br>
+                
+        <br>
+        So the first part of geodesics begin with dividing the shape up. 
+        <br>
+        We begin with an icosahedron. There are many ways to divide a shape up, but we are looking for features that allow for symmetry and equality. 
+        <br>
+        The methods of dividing are referred to as Class.
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-class.png" class="gocent"> 
+        <br>
+        <br>
+        
+`,
+`
+Breakdown
+`,
+`
+<br>
+       Following the division, we will be posed with the question of how many times to apply this division. Class 1 for example supports any number of frequency. Class 2 on the other hand, only supports even frequencies.
+        <br>
+        Frequency as it increases will better approximate a dome or sphere. The idea is that higher frequency is better but it has ts disadvantages. To make up for these, the laminar dome (diamond dome) or spaceframe is used.
+        <br>
+        First off are the angle bends. These decrease with higher frequency therefore making the dome flatter. Flat isn't ideal when it comes to building. The dome can pop inward. At frequencies 8 and above domes will have angles at 4 degrees or less. The chart shows the angles. Hugh Kenner describes his recommendation.
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-frequency.png" class="gocent"> 
+        <br>
+        <br>
+        
+        <br>
+        Subdivision is somewhat like class but a more refined version of that particular class.
+        Examples of subdivision for Class 1 domes.
+        Subdivision Method 1 Equal Triangles More similar triangles
+        Subdivision Method 2 Equal Chords More similar struts
+        Subdivision Method 3 Mexican Fewer number of struts
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-frequency.png" class="gocent"> 
+        <br>
+        <br>
+        
+        <br>
+        Since we are approximating our shape into a sphere, we gain more rows as we increase frequency. This allows us different portions of a sphere. However, if we move outside using a 1/2 sphere, our dome won't be as efficient as it could be. 
+        <br>
+        Dome profile 1/2 domes will provide you with a dome that has the most stability since it represents a sphere at its widest point. 
+        <br>
+        Though you will also want to consider standing room for your dome. low profile you will want for high wind or if you want to cover a lot of floor space for less.
+        <br>
+        In order to figure up the number of rows on a sphere, we multiply the frequency times 3 (for an icosahedron).
+        <br>
+        For example, 
+        <br>
+        A 1v icosa has 3 rows.
+        <br>
+        A 2v has 6 	1/2 is 3
+        <br>
+        A 3v has 9
+        <br>
+        A 4v has 12 	1/2 is 6
+        <br>
+        <br>
+        <br>
+         <img src="../images/geodesics/geodesic-profile.png" class="gocent"> 
+        <br>
+        <br>
+`,
+`
+Profile
+`,
+`
+afsdfasdhfgaskjhdfjkasdf
+`
+]
+
+frontpage.innerHTML = sectionMaker(contentPage)
+</script>
+
+    </main>
+
+
+<footer id="footer">
+<script src="../footer.js"></script>
+</footer>

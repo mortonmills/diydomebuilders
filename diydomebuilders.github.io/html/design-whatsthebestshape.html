@@ -1,0 +1,251 @@
+<!doctype html>
+<head id="head">
+<script src="../head.js"></script>
+</head>
+
+<script src="../cms.js"></script>
+
+<header id="header">
+<script src="../header.js"></script>
+</header>
+
+<nav id="navbar">
+<script src="../navbar.js"></script>
+</nav>
+
+
+
+
+<main>
+
+<div id="headline"></div>
+
+<script>
+let headline = document.getElementById("headline")
+
+let headlineName = `What's The Best Shape?`
+let dateCreated = `January 20, 2020`
+let dateUpdated = `January 20, 2020`
+
+headline.innerHTML = headlineMaker(headlineName, dateCreated, dateUpdated)
+</script>
+
+
+
+<div class="textContent">
+<p>
+Why domes?
+</p>
+
+<br>
+My first thought about geodesic domes.
+<br>
+There are many different ways to define best.
+And in this article we are going to explore what shapes, excel at what.
+<br>
+When it comes to building a structure, you are going to come across shapes.
+Costs play a large factor in building so building a structure that you get more for less is ideal.
+So the first category we are going to look at it is covering the most space for the least amount of material.
+<br>
+Before we dive into the 3D world, let's first take a look into 2D to help us better understand.
+<br>
+
+
+</div>
+
+
+<div class="sectioning">
+<h2>Best 2D Shapes</h2>
+<h3></h3>
+</div>
+
+
+
+<div class="textContent">
+First up are the regular polygons.
+</div>
+
+
+
+Perimeter: <input oninput="truthMe()" id="perimeter" type="number" value="10"  style="width: 60px">
+<br>
+
+<div id="group2D1" >texthere</div>
+
+
+
+<script>
+
+    let group2D1 = document.getElementById("group2D1")
+
+    let tableHeader = [
+      "Place",
+      "Picture",
+      "Name",
+      "Area",
+    ]
+
+  let shape = [
+    "circle",
+    "hexagon",
+    "pentagon",
+    "square",
+    "triangle",
+  ]
+
+    let tableMade = tableArrayMaker(tableHeader,shape)
+    let tableFinal = tableMaker(tableMade)
+
+    group2D1.innerHTML = tableFinal
+
+</script>
+
+
+<script>
+
+fixedPoint = 2
+let circle = document.getElementById("circle")
+let hexagon = document.getElementById("hexagon")
+let pentagon = document.getElementById("pentagon")
+let square = document.getElementById("square")
+let triangle = document.getElementById("triangle")
+
+
+
+function truthMe(){
+let side = 0
+let area = 0
+let perimeter = document.getElementById("perimeter").value
+
+circle.value = circleArea(perimeter)
+hexagon.value = hexagonArea(perimeter)
+pentagon.value = pentagonArea(perimeter)
+square.value = squareArea(perimeter)
+triangle.value = triangleArea(perimeter)
+
+}
+
+truthMe() //show initial value
+</script>
+
+<div class="textContent">
+For closed shapes the circle reigns king as being the most efficient for covering space with the least amount of material.
+<br>
+<br>
+Our next group are "open" shapes. In the 2D world we are imagining that we already have a side available to us as the ground.
+So we can have a minimum of 2 sides and the 3rd would be the ground.
+</div>
+
+
+
+<div id="group2D2" >texthere</div>
+
+<script>
+
+    let group2D2 = document.getElementById("group2D2")
+
+    let tableHeader2 = [
+      "Place",
+      "Picture",
+      "Name",
+      "Area",
+    ]
+
+  let shape2 = [
+    "triangle2",
+    "square2",
+    "square3",
+    "pentagon2",
+    "pentagon3",
+    "pentagon4",
+    "hexagon2",
+    "hexagon3",
+    "hexagon4",
+    "hexagon5",
+    "rightTriangle",
+    "rectangle",
+    "pentagonHalf",
+    "hexagonHalf",
+    "semiCircle",
+  ]
+
+    let tableMade2 = tableArrayMaker(tableHeader2,shape2)
+    let tableFinal2 = tableMaker(tableMade2)
+
+    group2D2.innerHTML = tableFinal2
+
+</script>
+
+
+<div class="sectioning">
+<h2>Best 3D Shapes</h2>
+<h3></h3>
+</div>
+
+<div class="textContent">
+The circle is the most efficient closed 2D shape.
+<br>
+The arch is the most efficient open 2D shape.
+<br>
+So which shapes have the lowest perimeter to area (see calculator here).
+ajsdfklashfdljksalkdfsadfalksdfalksjfaljsfdhalksjfaklsjfhkalsjfhlkasjfalsd
+<br>
+</div>
+
+
+
+<div class="sectioning">
+<h2>Summary</h2>
+<h3></h3>
+</div>
+
+
+
+
+
+<div class="textContent">
+So our winners of the best shapes are:
+</div>
+
+<div id="summary">
+
+</div>
+
+<script>
+let intro = document.getElementById("intro")
+
+let figures =`
+geodesichelpgroup.png	Geodesic Help Group	O	2008	https://groups.google.com/forum/#!forum/geodesichelp
+`
+figures = figureMaker(figures) 
+
+summary.innerHTML = figures
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </main>
+
+
+
+<footer id="footer">
+<script src="../footer.js"></script>
+
+
+</footer>

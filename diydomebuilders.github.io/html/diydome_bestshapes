@@ -1,0 +1,335 @@
+thebestshapes
+
+table of contents
+-
+MEANING OF BEST
+
+2D SHAPES REGULAR POLYGONS
+2D SHAPES NO SIDE, FLOOR SPACE
+2D SHAPES COMPARING BOTH
+
+3D SHAPES REGULAR POLYGONS
+3D SHAPES NO SIDE, FLOOR SPACE
+3D SHAPES COMPARING BOTH
+-
+
+
+MEANING OF BEST
+
+This article was partly inspired by the one available at simply differently.
+Our definition of best here is going to be perimeter to area ratio. surface area to volume ratio.
+What does that mean?
+In the pursuit of putting together a house. Costs are coming into play. The idea is to cover the most space we can with the least amount of money.
+Many other considerations will come into play to determine what kind of house will be best for you.
+But for the time being, let's consider this an experiment if that were the only factor, what would the most efficient shape be for the money.
+Before we dive into the 3d world, let's take a step back into 2d to help us better understand.
+
+This is used because we are trying to get the most space with the least amount of material thereby reducing costs.
+The concept of surface area to volume may be hard for some to understand if math was never your strong suit.
+But have no fear, let's take a look into the second dimension [twilight zone theme and fonts possibly]
+
+		Let's imagine for a second that we are back in the 2D world. we want to combine shapes to make new hybrid shapes. That's geodesics essentially is. Our father shape and mother shape.
+		Mother is sphere and father is icosa. Instead call it parents shapes. Outer and inner vs mother and father.
+		make interactive canvas, where you can pull vertices to make the dome, see it in action.
+		What is meant by approximations of domes? To call it a dome, can only be taken to be approximate. Generic sphere, or purple is an approximation of blue or red.
+		We dove into the theoretical world of shapes and geodesics, now we are going to look at the real world to help us decide which types of domes are practical for our needs.
+		How big of a difference is integrity between these two types of domes.
+
+
+2D SHAPES REGULAR POLYGONS
+
+So in the 2D world we have something called perimeter, which is the total length of the line creating the shape.
+And area, which is the amount of space enclosed within this line.
+It might be easier to think of perimter like a string and the space contained within the string is area.
+{show picture of person holding string]
+
+Imagine in our 2D world, if we wanted to build a house. 
+We are trying to get the best bang for our buck.
+So we do some scavenging and find all of the perimeter to area equations.
+So we have to be careful about what shape we choose from our line. 
+They only sell shapes here but of them the circle gives us the best bang for our buck. (money joke for geometry)
+stick figure[hmm] tries to draw a shape. animation low fps. then draws a circle.
+
+[show chartof shapes and perimeter to area ratios, include realtime calculator]
+
+So we setup our circle and realize we don't have that much floor space.
+It appears that the circle we have isn't really working as a home for us. 
+So we look at our chart, for the next on our list best.
+We don't really feel like drawing a near number of infinite sides so we instead choose a hexagon.
+We setup our hexagon, and voila it works.
+Simple?...
+
+
+2D SHAPES NO SIDE, FLOOR SPACE
+
+After a few days in our new home, we start to question whether we really need the side of our hexagon that's on the ground. 
+We could be getting a better perimeter to area ratio if we removed that piece, couldn't we?
+Hmm.
+We do and the checked the percentage of gain we have.
+
+[show difference in original hex and new hex with calculations]
+
+That we start thinking about our leftover side, being efficiency mongers we try to come up with a way to use with our house.
+Since we have 5 sides left on our perimeter, we think it would be a good idea to split up our remaining side into 5 pieces and add each piece to side of our house.
+In the middle of the night we start working, once finished we check our gains.
+Wow, we have gained even more area with our perimeter. The ratio appears even better.
+We start to get curious and think why a bigger hexagon has a better perimeter to area ratio.
+We discover that the bigger the shape the higher the perimeter to area ratio will.
+Cool.
+
+[show difference in new hex and new new hex with calculations]
+
+The next morning we start thinking again. 
+What would happen if I removed more sides.
+We do, which now makes our whole hexagon a half a hexagon, in this case it's a trapezoid.
+We run the numbers again.
+By gum! We've felt like we've discovered something. Better surface to volume/ratio.
+We follow suit and split our leftover sides into thirds to add to the three remaining sides.
+
+[show difference in new new hex and trapezoid with calculations]
+
+After a long day's work, it has gotten dark, we look up at the sky to savor our success.
+The moon is out, and we start to look at it happily enjoying our accomplishments.
+A half moon in fact...
+We turn back to the house and as we are walking back, we get goosebumps.
+Wait! A half moon! A half circle! No!, it can't be.
+
+We take our house apart. We have to know.
+When we finish, our instincts have served us well.
+This semicircle, has beaten our trapezoid.
+
+
+2D SHAPES COMPARING BOTH
+
+Then we start to wonder, if our circle is still the best shape.
+Bollocks! We've discovered a new better than best shape.
+But is this the only one?
+
+So we check our triangle, and then our square.
+Then our pentagon. Whoa! looks like we aren't sure how to do a pentagon.
+Looks like we'll be skipping this one for now. 
+[show super long equation for pentagonal divisions]
+
+So is there a best floor area shape?
+A really flat triangle or rectangle?
+
+[floor perimeter chart]
+
+[surface perimeter chart include acute, semicircles, rectangles, irregulars, all closed common shapes]
+show 1 side for sake of completeness incline house.
+color green at top possibly gold for number 1 and then red for bottom, horizontal bar chart.
+practical considerations for design, considering area for heating and cooling, more uniform temperature, floor more space, cramped look
+horizontal bar chart for perimeter to area ratios
+line chart showing increase in ratio along with winners. emphasize growth in perimeter will increase the efficiency.
+have checkboxes to view groups and each shape individually as well.
+create a pyramid with checkbox to show/hide content on chart.
+visualizations patterns even sided can be vertex to vertex divisions, odd sided are vertex to side.
+make pyramid of shapes and ratios, potentially circle at top or show a line to be unideal version of house.
+20 different shape types and show from red to green highest ratios and least highest
+include rotations for floor sides, ex trapezoid has 4 different positions it can do, actually 3 since two are of equal length.
+show animation of cutting shapes in half then rotating, use transform in css or javascript.
+Have sequence where you click to cut, then rotate, then show bottom removed and fades away. maybe show difference in perimeter area ratio when removing bottom.
+
+[ultimate comparison chart]
+
+So the real question now is: So can we get both best floor perimeter and area ratio, in one shape?
+
+Phew! that was a lot of work.
+Let's move on to 3d n.
+
+
+
+
+
+standard shapes with best perimeter to area ratios. chart with numbers  regular polygons
+same but include half shapes and quarter and 3/4 irregular polygons
+special shapes with best floor to area ratios. this is often referred to calotte area.
+combine the two to see the best of both worlds.
+
+So looking at the chart we start to see some patterns.
+The first is if it's curved then we have a better ratio.
+
+pick shapes with longest side to determine floor area category, triangle with longest hypotenuse.
+Is there a way to determine a shape that will give us the greatest amount of floor space as well as surface area to volume ratio.
+
+3D SHAPES REGULAR POLYGONS
+3D SHAPES NO SIDE, FLOOR SPACE
+3D SHAPES COMPARING BOTH
+
+
+
+That wasn't too bad. We might be ready to step it up a notch in the third dimension.
+Let's take what we know about the second dimension and apply to the third.
+Bubbles, what about bubbles.
+Ok, great, now let's test it.
+Cool everything works out. 
+
+Is there anything else?
+Well actually there is.
+There well kept secret in nature, that you may not yet have heard.
+The larger something is, the more efficient that ratio becomes.
+So as far as we are concerned, bigger is better and size does matter.
+
+If you would like scientific examples checkout some of the interesting phenomenon in nature, such as why elephants have big ears or why blue whales are so big.
+If you plan on going offgrid, then understanding surface area to volume ratio are will be an indespenable piece of knowledge. 
+It may in fact save your life and/or somebody else's someday.
+
+building bigger is better, you can utilize your fabric more this way to save money, building large lower frequency dome with stiffer cover will make for a good and usable structure.
+
+use a piece of fabric to demonstrate the equivalent of the string but in 3D.
+ask illustrator to produce a picture of sphere and wife baby joke
+
+
+2d
+line to half line
+triangle to triangle
+square to rectangle
+pentagon to half
+hexagon to half
+that's where we are headed
+circle to arch
+
+3d
+tetrahedron to tetrahedron
+cube to rectangular prism
+icosahedron
+
+sphere to dome
+3/4 sphere
+1/2 sphere
+1/4 sphere
+cone to conical frustum like a triangle from 2d
+cylinder to half cylinder like a square from 3d
+capsule
+square pyramid
+
+the best shapes
+the best shapes reborn like movie
+domes and cylinders come in and wreck the championship
+sorry to crash the party boys
+
+dome's make good roofs
+
+she has your faces and your vertices
+sphere and icosa holding a baby geodesic sphere
+
+Don't be such a square. [chuckling]
+
+
+
+
+
+
+
+
+
+
+diydomebuilders 
+What is the Best Shape?
+In this article we are going to look at the best shapes for containing space.
+BEST 2D SHAPES
+Before going to 3D Shapes, it will help to see how different shapes perform in 2D.
+
+Two important terms you will need to know are perimeter and area.
+
+Cinque Terre
+Perimeter is the total distance of the line for the shape.
+Cinque Terre
+Area is how much space the shape takes up.
+
+
+
+If we were given a string and ask to create a shape that covered the greatest area, then we would be looking for what is called an perimeter to area ratio.
+Why is this important?
+So which shapes have the lowest perimeter to area (see calculator here).
+
+The answer is a circle. (progression of shapes with asymmetry)
+
+But there is also another way to get shapes that have low perimeters to area.
+If we were to have a side already available, then we would have to reevaluate.
+
+The answer, in this case, is an arch. (progression of half shapes with asymmetry)
+
+
+So let's look at how all of the 2D shapes compare to one another.
+
+
+Before moving on there is one other important thing to note.
+As shapes get larger, they become more efficient at covering space.
+
+Cinque Terre
+For example, our circle with a perimeter of 1.7 covers .23 area.
+Our perimeter is lower than area.
+Cinque Terre
+Now lets increase the size of the circle.
+Our circle's perimeter is 17 and now covers an area of 23.
+Our perimeter is greater than area.
+
+
+And finally, we can see the best use of 2D shapes and their size. (circle and arch perimeter to area ratios getting more efficient)
+
+
+Summary
+The circle is the most efficient closed 2D shape.
+The arch is the most efficient open 2D shape.
+As shapes get larger, they become more efficient at covering space.
+Best 3D Shapes
+Now we move on to 3D shapes.
+
+Two important terms you will need to know here are surface area and volume.
+
+Cinque Terre
+Surface area is the total area of the shape. It is the equivalent of perimeter in 2D.
+Cinque Terre
+Volume is how space the shape takes up. It is the equivalent of area in 3D.
+
+
+
+If we were given a handful of clay and asked to create a shape that had the most volume, then we would be looking for what is called an surface area to volume ratio.
+Why is this important?
+So which shapes have the lowest surface area to volume (see calculator here).
+
+The answer is a sphere. (picture of clay ball)
+
+But there is also another way to get shapes that have low surface area to volume.
+If we were to have a side already available, then we would have to reevaluate.
+
+The answer, in this case, is a dome. (picture of clay dome)
+
+
+So let's look at how all of the 3D shapes compare to one another.
+
+
+Just the same as 2D shapes. As 3D shapes get larger, they become more efficient at covering space.
+
+Cinque Terre
+For example, our sphere with a surface area of 12 covers 3.91 volume.
+Our volume is lower than surface area.
+Cinque Terre
+Now lets increase the size of the sphere.
+Our circle's surface area is 120 and now covers volume of 123.61
+Our volume is greater than surface area.
+
+
+And finally, we can see the best use of 3D shapes and their size. (sphere and dome surface area to volume ratios getting more efficient)
+
+
+Summary
+The sphere is the most efficient closed 3D shape.
+The dome is the most efficient open 3D shape.
+As shapes get larger, they become more efficient at covering space.
+Domes
+Domes are the most efficient shape for covering space. Also the bigger the dome, the more efficient it is.
+
+However, this only works if we don't count the bottom surface area.
+
+Looking through the kitchen, you will find 2 incredible uses for the 1/2 sphere.
+
+The bowl.
+
+
+And the dome.
+
+
+
+updated July 10, 2018
