@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grouped headers | TableFilter</title>
+  </head>
+
+  <body>
+
+    <script>
+      function diyTableMaker(tableContent){
+        let arr = []
+
+
+        for (let i = 1; i < tableContent.length; i++){ //starts at 1, dont need headers
+
+          arr.push(`<tr>`)
+
+          tableContent[i].forEach(function(el){
+            arr.push(`<td>${el}</td>`)
+          })
+
+          arr.push(`</tr>`)
+
+        }
+        console.log(`maker${data}`)
+        return arr.join("\n")
+
+      }
+    </script>
+
+    <table style="width:100%" id="groupedHeaders">
+      <thead>
+        <tr>
+          <th nowrap="">Timestamp<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Creator<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Diameter<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Structural<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Profile<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Polyhedra<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Class<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Frequency<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Frame Material<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Country<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">City (optional)<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Coordinates (optional)<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Web Address (optional)<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Would you like a Webpage on diydomebuilders?<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Place all your Text Content here<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Upload your images here<img src="tablefilter/style/themes/updown.png"></th>
+          <th nowrap="">Year Created<img src="tablefilter/style/themes/updown.png"></th>
+        </tr>
+      </thead>
+
+      <tbody id="tableData">
+
+      </tbody>
+    </table>
+
+    <script type="text/javascript" src="papaparse.min.js"></script>
+
+    <script>
+
+
+
+
+
+      let tableData = document.getElementById("tableData")
+      let data;
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1SLE_E7y4db0mjvNlZMRd_yMzKtngO0IEeD-80PzAPMQ/pub?output=csv';
+
+      function init() {
+        console.log(`init${data}`)
+        Papa.parse(public_spreadsheet_url, {
+          download: true,
+          header: false,
+          complete: showInfo
+        })
+
+        console.log(`end init${data}`)
+      }
+
+
+
+      console.log(`2nd${data}`)
+
+    </script>
+
+
+    <script src="tablefilter/tablefilter.js"></script>
+
+    <script data-config>
+      console.log(`3rd${data}`)
+      var tfConfig = {
+        base_path: '../tablefilter/',
+
+        auto_filter: {
+          delay: 0 //milliseconds
+        },
+        // filter types
+
+        col_2: "checklist",
+        col_3: "checklist",
+        col_4: "checklist",
+        col_5: "checklist",
+        col_6: "checklist",
+        col_7: "checklist",
+        col_8: "checklist",
+
+
+        // column types
+        col_types: [
+          'string', 'string', 'number',
+          'string', 'string', 'string'
+
+        ],
+
+        // filters and headers position
+        filters_row_index: 1,
+        headers_row_index: 0,
+        sticky_headers: true,
+        state: { types: ['local_storage']},
+        popup_filters: false,
+
+        alternate_rows: true,
+        rows_counter: true,
+        btn_reset: true,
+        status_bar: true,
+        ignore_diacritics: true,
+        no_results_message: true,
+        enable_empty_option: false,
+        enable_non_empty_option: false,
+        loader: false,
+        mark_active_columns: false,
+        highlight_keywords: false,
+
+        // theme
+        themes: [{ name: '' }],
+
+
+        // sorting extension
+        extensions: [{ name: 'sort' }]
+      };
+
+
+      var tf = new TableFilter('groupedHeaders', tfConfig, 2);
+
+      console.log(`4th${data}`)
+      function showInfo(results) {
+        data = results.data
+        console.log(`1st${data}`)
+        tableData.innerHTML = diyTableMaker(data)
+        // data comes through as a simple array since simpleSheet is turned on
+        tf.init()      
+      }
+
+      init()
+
+    </script>
+
+
+    <hr>
+
+  </body>
+
+</html>

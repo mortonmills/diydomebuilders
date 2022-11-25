@@ -1,0 +1,248 @@
+/* Keeps a scroll bar in side, prevents inconsistencies among webpages that don't need scroll bar */
+html { overflow-y: scroll;
+
+ }
+
+/* background, font*/
+body {
+    background-image: url("sdfgspng.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px 60px 0px 60px;
+}
+
+/* diydomebuilders font-size, make header1 smaller */
+.pagetitle {
+            
+    }
+   
+/* keeps title black but still usable as link to index */
+header a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav {
+    text-align: left;
+    font-size: 10px;
+}
+
+/* centers image and is responsive to screen sizes */
+.gocent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width:600px;
+    height:auto;
+}
+
+.gocent2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.cleary {
+    overflow: auto;
+}
+
+
+.horrow {
+    width: 96%;
+    }
+
+.horrow2 {
+    width: 42%;
+    }
+
+/* disables effects of center class */
+.noalign {
+    text-align:left;
+}
+
+
+
+/* Following Section is for putting images in a row on indexpage */
+
+div.gallery {
+    border-radius:  50px;
+    border: 10px solid #ffffff;
+    background-color: black;
+    
+    
+}
+
+div.gallery:hover {
+    border: 10px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 35px 35px 0px 0px;
+}
+
+div.desc {
+    text-align: center;
+    color: orangered;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 6px 6px;
+    float: left;
+    width: 19.999999%;
+}
+
+@media only screen and (max-width: 1023px) {
+    .responsive {
+        width: 33.32%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Following Section is for putting VERSUS */
+.versus {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Following Section is for putting text in 1/2 sections */
+div.third {
+    text-align: center;
+    font-size: 20px;
+    width: 33.32999999%;
+    float: left;
+    font-weight: bold;
+}
+
+/* Following Section is for putting images in a HALF row on subpages */
+  
+div.gallery2 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc2 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive2 {
+    padding: 0 30px;
+    float: left;
+    width: 49.999999%;
+}
+
+/* Following Section is for putting images in a 3RD row on subpages */
+  
+div.gallery3 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc3 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive3 {
+    padding: 0 6px;
+    float: left;
+    width: 33.32999999%;
+}
+
+.responsivepro {
+    float: left;
+    width: 49.999999%;
+}
+
+/* Following Section is for putting images in a 4TH row on subpages */
+  
+div.gallery4 img {
+    width: 100%;
+    height: auto;
+}
+
+.desc4 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive4 {
+    float: left;
+    width: 24.99999999%;
+}
+
+
+/* Following Section is for putting images in a 2/3TH row on subpages */
+  
+div.gallery6 img {
+    width: 100%;
+    height: auto;
+}
+
+.desc4 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive6 {
+    float: left;
+    width: 74.999999999%;
+}
+
+/* Following Section is for putting images in a 10 row on subpages */
+
+div.desc10 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive10 {
+    float: left;
+    padding: 6px 6px;
+    width: 9.9999999999%;
+}
+
+.goright {
+    float:right;
+    font-size:15px;
+}
