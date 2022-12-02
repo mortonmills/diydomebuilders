@@ -1,0 +1,171 @@
+WEBSITE DESIGN
+convert pages to html not autogenerate javascript navbar
+for scriptmaker, may want to use a different symbol than "|" (OR) so symbol not used in javascript
+webpage maker calculators
+create a manual calculation step by step sheet
+
+then add styling
+testing calculator and js
+minimum flattened area based on hexagon and pipe diameter
+
+
+
+
+Cutting
+Flattening
+Making Holes
+
+
+first calc
+overarching calculator to help decide which main calculator. shows strut lengths and costs
+on calculator put in geodesics constants optimal dome struts size calculator
+make a table of different dome calculations based on 10 foot poles
+will be easy for others to use
+
+best shapes
+best shape have numbers and surface area to volume ratio increasing to show that larger is better also
+
+
+
+Library
+
+
+
+diydomebuilders+ form
+recommend creating your own website through a static site generator, have a links on how to do that.
+add robert clark
+Youtube channels
+display options for possible fields in diydomebuilders+ select and options, include tooltips about what each category is. 
+
+make it similar to favicon generator, explain each section and what it does, offer an other option
+create tooltips with images to expalin what each head is, have link within tooltip to allow for more information
+TABLE INTERFACE
+json speed inside of code
+have view and download options
+
+What is your dome used for?
+How did you design your dome?
+How did you build your dome?
+How did you assemble your dome? top down bottom up?
+What kind of hub system did you use?
+What kind of covering did you use for your dome?
+
+have on hover to show picture in tables, especially calculators tables, possibly include desert domes calcs and simply different.
+
+
+get tool tips designed
+optimizing site speed
+website anaylitics
+how to secure your website and email personal
+how to section forms in multiple choice
+visual site mapping
+keeping track of analytics and displaying informtion for public view.
+show analytics on website, visulaize data
+is an icosa really a 2v tetrahedron? 
+
+Geodesic Dome
+	Design
+		Form
+		Best Shapes
+		Best Size
+		Geodesics
+			shell(membrane) vs frame, 
+				the shell is the frame and cover, whereas frame needs cover, compared to flange nuts and nuts and washers, minimizing components.
+				But is there really a difference? The difference is scale. If we were to look at an egg microscopically, you would see something similar to a frame.
+				Another difference is overlapping system, what is the difference between a sheet of plywood and a frame section with cover already attached?
+			Parent Polyhedra
+			Profile
+			Frequency
+			Class
+			Breakdown 
+			Size
+			Height
+		Real World App
+				best of volume floor area surface area. These three categories deal with maximizing material for your structure.
+				For example, a bowl or dome is the ideal shape for holding the most volume for the least material. A sphere also works.
+				Stepping into reality, the best shapes for the kinds of things you want from your structure, 
+				such as heating you will want a sphere, or the list of closed shapes,
+				for wind, flat surfaces may not be a good choice,
+			Permenant vs temporary.
+				This is going to help you decide what you should do.
+		Material
+			Best Materials
+				Earth, Air, Water, Fire
+				Stone, Wood, Metal, Plastic
+			Hub System
+			Where to go form here
+				If you are looking at plastic such as pvc then you may want to head over to zip-tie domes for advice on how to do that.
+				If you are looking at wood, then you may want to head over to paul robison's site.
+				If you are looking at using metal, then you may want to keep reading here and desert domes and domerama. The is the most common way to build
+		
+	Build
+		Fabrication
+			Logistics, How much do you want done for you? You can create your own poles or you can buy a kit, or have someone set it up for you. 
+				just like baking that cake. You can grow your own wheat, grind, sift it, and so forth. Or you can buy a kit with all of the ingredients.
+				The idea applies to your tools as well, there is the tradeoff between time and money. But you also gain knowledge about for that time spent.
+				Cutting
+				Flattening
+				Drilling
+				Bending
+			Covering
+				Plastic Sheeting
+		Assembly
+			Organizing
+			Bottom up and Top down, technically others.
+			Covering
+			Anchoring
+			Grounding
+				Lightning is something to respect. These reindeer, well yeah. The interesting thing about this photo is that is wasn't exactly lightning that killed them.
+
+
+
+CALCULATORS
+Put a table of contents in the picture side by side for struts and bolts
+have view as one page
+create table for possible dome combos and flat base or not.
+have input available for pole length, diameter
+in page links for rquired fields on inputs if someone forgot to click it 
+make sure to put ft or m in large text to clarify measurement system 
+? question  in black circle in white font to indicate information about pipe
+expandable tab calculator, no scroll just clicking
+no pictures and instead excel like spread sheets of materials
+mini box with needed values to clarify flattening requirements or other fields
+put everything in a div box with outline to organize content on page
+advanced section with more details about dome dimension
+
+FABRICATION IDEAS
+Cutting
+Drill attachment to grip cylinder
+SPring loaded disc to cut pipe
+Could use a sharpened tool steel washer
+Drilling
+Start with a smaller bit and then go bigger sizes to reduce wear and tear
+Can also use oil to reduce friction and further wear and tear.
+Flattening
+Use drill to turn reciprocating motion into rotary machine
+Alternatively use bolts to smash together pipe
+or your car
+Fine thread vs coarse thread
+Construction
+Bolts with lock nuts
+Nylon on lock nuts may be prone to degradation from uv radiation
+Use white plastic sheeting
+No duck tape just have a better overlap, gilling, Gilling will allow your dome to breath from the inside out if too much pressure is inside. The air pressure will push out these sections.
+Cement over geotextile, preferably cement to reduce 2 steps into one.
+Tetrahedrons and chain hoist for lifting.
+i tried everythig from sand, mud, clay, cement, lime, milk casein. Cement had the best results
+to mitigate the use of coarse thread over fine thread, a lock nut can offer an extra level of security to your dome.
+drilling will be easier with smaller holes, can be done with hand drill for smaller bolt sizes
+
+DOME IDEAS
+one strut length dome. yes it can be done but we have to combine dome sizes
+rotating ladder for larger domes in order to make repairs, probably can find picture of same used on large storage domes.
+
+
+
+MAIN
+make holiday themed nav menu and header.
+night and day option for harsh eyes
+svgs to switch to white, toned down versions of white and black not so much contrast.
+make website able to be ran again offline, Have as PDF file as well, 1st edition use 1V icosahedron, the new domebook
+
