@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grouped headers | TableFilter</title>
+
+  <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+  
+  <style>
+  
+  
+  
+img {
+vertical-align: -19%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  body {
+    opacity: 1;
+height:1000px;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+</style>
+
+
+
+
+
+  <header>
+    <a href="index.html">
+      <h1>diydomebuilders <img src="diyicon.png"></h1>
+    </a>
+  </header>
+
+  <hr>
+
+    <h1>diydomebuilders+</h1>
+    <div class="datemade">created March 31, 2020
+      <b>(updated March 31, 2020)</b></div>
+    <br>
+    
+    <table style="width:100%"id="grouped-headers">
+    </table>
+
+    <script type="text/javascript" src="papaparse.min.js"></script>
+    <script type="text/javascript">
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Py2qMUKCYOz-AEu6vwx4rcIPiPzw2eS8YE8cgoO7K6I/pub?output=csv';
+     
+
+      
+      
+      //https://docs.google.com/spreadsheets/d/1SLE_E7y4db0mjvNlZMRd_yMzKtngO0IEeD-80PzAPMQ/pub?output=csv
+      
+      function init() {
+        Papa.parse(public_spreadsheet_url, {
+          download: true,
+          header: true,
+          complete: showInfo
+        })
+      }
+
+      init()
+
+      function showInfo(results) {
+        var data = results.data
+
+        // data comes through as a simple array since simpleSheet is turned on
+        
+        let arr = []
+
+
+arr.push(`<thead>`)
+arr.push(`<tr>`)
+
+    for (let [tabs, module] of Object.entries(data[0])) {
+    arr.push(`<th>${tabs}<img src="../tablefilter/style/themes/updown.png"></th>`)
+
+    }
+
+arr.push(`</tr>`)
+arr.push(`</thead>`)
+
+
+
+arr.push(`<tbody style="text-align:left">`)
+        
+        data.forEach(function(el){
+          
+          arr.push(`<tr>`)
+
+   for (let [tabs, module] of Object.entries(el)) {
+      arr.push(`<td>${module}</td>`)
+
+    }
+
+  arr.push(`</tr>`)
+
+
+}
+)
+        
+
+        
+        
+  arr.push(`</tbody>`)
+
+
+
+
+        document.getElementById("grouped-headers").innerHTML = arr.join("\n");
+
+ }
+    </script>
+    
+        <script>
+window.addEventListener("load", function() {
+  
+
+  console.log('Page is loaded');
+ 
+  
+});
+</script>
+    
+    
+    <script>  
+  var tfConfig = {
+        base_path: '../tablefilter/',
+
+                    auto_filter: {
+            delay: 0 //milliseconds
+        },
+        // filter types
+   
+        col_2: "checklist",
+   col_3: "checklist",
+        col_4: "checklist",
+   col_5: "checklist",
+           col_6: "checklist",
+   col_7: "checklist",
+           col_8: "checklist",
+
+
+        // column types
+        col_types: [
+            'string', 'string', 'number',
+            'string', 'string', 'string'
+            
+        ],
+
+        // filters and headers position
+        filters_row_index: 1,
+        headers_row_index: 0,
+                        sticky_headers: true,
+        state: { types: ['local_storage']},
+        popup_filters: false,
+
+        alternate_rows: true,
+        rows_counter: true,
+        btn_reset: true,
+        status_bar: true,
+        ignore_diacritics: true,
+        no_results_message: true,
+        enable_empty_option: false,
+        enable_non_empty_option: false,
+        loader: false,
+        mark_active_columns: false,
+        highlight_keywords: false,
+        
+         // theme
+        themes: [{ name: '' }],
+        
+
+        // sorting extension
+        extensions: [{ name: 'sort' }]
+    };
+    </script>
+    
+      <script src="../tablefilter/tablefilter.js"></script>
+
+
+<hr>
+
+  </body>
+
+</html>
