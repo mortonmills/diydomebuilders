@@ -8,7 +8,7 @@ then add styling
 testing calculator and js
 minimum flattened area based on hexagon and pipe diameter
 
-
+add shapes2 for whatisthebestshape.html 
 
 
 Cutting
