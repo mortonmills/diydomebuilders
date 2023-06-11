@@ -14,5 +14,5 @@ head.innerHTML = `
     <meta name="description" content="A site made for domebuilding projects. Includes tutorials & calculators for building a dome, a covering, and living offgrid.">
 
 
-    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="../styles/site.css">
 `
