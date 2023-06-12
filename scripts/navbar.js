@@ -7,64 +7,7 @@
     if(arr[arr.length - 1] == "") arr.pop()
     return arr
   }
-  /*
-navbar.innerHTML = `
 
-<hr>
-<div class="navbar">
-
-<div class="dropdown">
-<button class="dropbtn">Library</button>
-<div class="dropdown-content">
-<a href="../html/aboutcontact.html">About/Contact</a>
-<a href="../html/diydomebuilders.html">diydomebuilders+</a>
-<a href="../html/furtherreading.html">Further Reading</a>
-  </div>
-  </div>
-
-<div class="dropdown">
-<button class="dropbtn">Design</button>
-<div class="dropdown-content">
-<a href="../html/whatsthebestshape.html">Why Domes</a>
-<a href="../html/introtogeodesics.html">Why Geodesic</a>
-<a href="../html/frame.html">Choosing A Design</a>
-<a href="../html/covering.html">Covering/Add-Ons</a>
-  </div>
-  </div>
-
-<div class="dropdown">
-<button class="dropbtn">Build</button>
-<div class="dropdown-content">
-<a href="../html/buyingconduit.html">Buying Materials</a>
-<a href="../html/makingstruts.html">Making Struts</a>
-<a href="../html/covering2.html">Covering/Add-On's2</a>
-<a href="../html/anchoring.html">Assembly</a>
-  </div>
-  </div>
-
-<div class="dropdown">
-<button class="dropbtn">Offgrid</button>
-<div class="dropdown-content">
-<a href="../html/goingoffgrid.html">Going Offgrid</a>
-  </div>
-  </div>
-
-<div class="dropdown">
-<button class="dropbtn">Calculators</button>
-<div class="dropdown-content">
-<a href="../html/1v.html">1V</a>
-<a href="../html/2v.html">2V</a>
-<a href="../html/3v.html">3V</a>
-<a href="../html/4v.html">4V</a>
-  </div>
-  </div>
-
-
-  </div>
-<hr>
-
-`
-*/
 
   let navCategories = `
 Library
