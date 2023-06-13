@@ -1,4 +1,7 @@
 WEBSITE DESIGN
+diydomebuilders dynamic webpage generation, execute file as script/json then save as html.
+use semantic html elements for page organization
+
 convert pages to html not autogenerate javascript navbar
 for scriptmaker, may want to use a different symbol than "|" (OR) so symbol not used in javascript
 webpage maker calculators
